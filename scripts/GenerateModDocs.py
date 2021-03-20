@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import os
+import re
 import sys
 import requests
 import json
@@ -140,6 +141,9 @@ class Mod:
                 assert modObject["license"] in self.ValidLicenses
                 self.License = [modObject["license"], self.ValidLicenses[modObject["license"]]]
 
+            if "date" in modObject:
+                self.Date = modObject["date"]
+
             self.bSoftExceptions = bSoftExceptions
         except Exception as ex:
             if bSoftExceptions:
@@ -186,8 +190,22 @@ class Mod:
             NewFileName = self.ConvertStringToFile(self.Name) + ".md"
 
             print(f"Writing {self.Name} to _mods/{NewFileName}")
-            with open(f"../_mods/{NewFileName}", "w+") as outFile:
-                outFile.write(NewText)
+            if not os.path.exists(f"../_mods/{NewFileName}"):
+                with open(f"../_mods/{NewFileName}", "w+") as outFile:
+                    outFile.write(NewText)
+            else:  # Handle date time checking for updates
+                with open(f"../_mods/{NewFileName}", "r") as originalModFile:
+                    # Replace the date time
+                    oldLines = re.sub(
+                        "date: \d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?(([+-]\d\d:\d\d)|Z)?",
+                        'date: ""',
+                        "".join(originalModFile.readlines()),
+                    )
+                if oldLines == NewText.replace(f"date: {self.Date}Z", 'date: ""'):
+                    return None
+                else:
+                    with open(f"../_mods/{NewFileName}", "w+") as outFile:
+                        outFile.write(NewText)
 
         except Exception as ex:
             if self.bSoftExceptions:
@@ -223,6 +241,10 @@ def RequestJSONFromPage(url, bSoftExceptions):
 
 def GenerateModDocs(bSoftExceptions=True):
     print(f"Generating mod docs; bSoftExceptions == {bSoftExceptions}")
+
+    if not os.path.exists("../_mods"):
+        os.makedirs("../_mods")
+
     with open("./RepoInfo.json") as repoFile:
         repositoryInfo = json.load(repoFile)
 
