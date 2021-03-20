@@ -1,0 +1,12 @@
+# Jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Python
+scripts/pyvenv.cfg
+scripts/Include/*
+scripts/Lib/*
+scripts/Scripts/*
