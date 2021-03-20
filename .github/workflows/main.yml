@@ -47,7 +47,7 @@ jobs:
         run: |
           cd "scripts"
           python -m pip install --upgrade pip
-          pip install -r "scripts/requirements.txt"
+          pip install -r "requirements.txt"
   
       # Mod documentation is generated "softly" when the task has been scheduled
       # If mod documentation is faulty, it'll silently fail and not update the page of the given mod
