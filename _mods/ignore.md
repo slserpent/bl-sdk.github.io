@@ -1,0 +1,1 @@
+This file is just here to satisfy git and allow for the mod directory to exist on git itself

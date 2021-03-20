@@ -241,6 +241,10 @@ def RequestJSONFromPage(url, bSoftExceptions):
 
 def GenerateModDocs(bSoftExceptions=True):
     print(f"Generating mod docs; bSoftExceptions == {bSoftExceptions}")
+
+    if not os.path.exists("../_mods"):
+        os.makedirs("../_mods")
+
     with open("./RepoInfo.json") as repoFile:
         repositoryInfo = json.load(repoFile)
 
