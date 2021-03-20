@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Adds keybinds performing various cheaty things." # A short description of the mod itself.
 description: "Adds keybinds performing various cheaty things." # This is set in order to keep the SEO proper
-longDescription: "Adds keybinds performing various cheaty things.<br><img src='https://pbs.twimg.com/media/ElQAzdmWMAAlQEk?format=jpg'>" # Description of what the mod can do
+longDescription: "Adds keybinds performing various cheaty things.This sure is some good good sample text huh?<br><img src='https://pbs.twimg.com/media/ElQAzdmWMAAlQEk?format=jpg'>" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: ['User Feedback >= 1.3'] # Requirements for the given mod
@@ -18,7 +18,7 @@ issues: "https://github.com/apple1417/bl-sdk-mods/issues"
 download: "https://github.com/apple1417/bl-sdk-mods/raw/602451179c975ee25e8053ce1bd7a39bd302e557/ApplesBorderlandsCheats/ApplesBorderlandsCheats.zip"
 license: ['MIT', 'mit'] # License name, link about the license from https://choosealicense.com/
 
-date: 2021-03-20T10:55:03.771319Z # Date of when the generation happened (?)
+date: 2021-03-20T18:51:35.828338Z # Date of when the generation happened (?)
 ---
 **Contents**
 * TOC
