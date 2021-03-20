@@ -5,6 +5,7 @@ import requests
 import json
 import datetime
 import bleach
+import traceback
 
 
 class Mod:
@@ -76,6 +77,8 @@ class Mod:
 
     Date = datetime.datetime.now().isoformat()  # The current time in ISO-8601 format, used for "Last Updated"
 
+    bSoftExceptions = False
+
     def ConvertStringToFile(self, string):
         return "".join([ch if ch.isalnum() else "" for ch in string])
 
@@ -137,48 +140,61 @@ class Mod:
                 assert modObject["license"] in self.ValidLicenses
                 self.License = [modObject["license"], self.ValidLicenses[modObject["license"]]]
 
+            self.bSoftExceptions = bSoftExceptions
         except Exception as ex:
             if bSoftExceptions:
+                traceback.print_exc()
                 return None
             else:
                 raise ex
 
     def ConvertToMarkdown(self):
-        with open("./DefaultMod.md", "r", encoding="utf-8") as DefaultMod:
-            NewText = "".join(DefaultMod.readlines())  # Create a whole file of the default text
+        try:
+            with open("./DefaultMod.md", "r", encoding="utf-8") as DefaultMod:
+                NewText = "".join(DefaultMod.readlines())  # Create a whole file of the default text
 
-        NewText = NewText.replace('authors: ""', f'authors: "{", ".join(self.Authors)}"')  # Add the author flag
-        NewText = NewText.replace('title: ""', f"title: {self.Name}")  # Add mod name
-        NewText = NewText.replace('version: ""', f'version: "{self.LatestVersion}"')  # Add latest version
-        NewText = NewText.replace('supported: ""', f'supported: "{" + ".join(self.Supports)}"')  # Add supported
-        NewText = NewText.replace('tagline: ""', f'tagline: "{self.Tagline}"')  # Add tagline
-        NewText = NewText.replace('description: ""', f'description: "{self.Tagline}"')  # Add embed desc
-        NewText = NewText.replace('longDescription: ""', f'longDescription: "{self.Description}"')  # Add full desc
-        NewText = NewText.replace("categories: []", f"categories: {str(self.Types)}")  # Add types
+            NewText = NewText.replace('authors: ""', f'authors: "{", ".join(self.Authors)}"')  # Add the author flag
+            NewText = NewText.replace('title: ""', f"title: {self.Name}")  # Add mod name
+            NewText = NewText.replace('version: ""', f'version: "{self.LatestVersion}"')  # Add latest version
+            NewText = NewText.replace('supported: ""', f'supported: "{" + ".join(self.Supports)}"')  # Add supported
+            NewText = NewText.replace('tagline: ""', f'tagline: "{self.Tagline}"')  # Add tagline
+            NewText = NewText.replace('description: ""', f'description: "{self.Tagline}"')  # Add embed desc
+            NewText = NewText.replace('longDescription: ""', f'longDescription: "{self.Description}"')  # Add full desc
+            NewText = NewText.replace("categories: []", f"categories: {str(self.Types)}")  # Add types
 
-        NewText = NewText.replace(
-            "requirements: []",
-            f'requirements: {[(m + " " + self.Requirements[m][:2] + " " + self.Requirements[m][2:]) for m in self.Requirements]}',
-        )  # This is a bit janky since it takes in a dictionary and then we add spaces between `[MOD]>=[VER]`
-        NewText = NewText.replace(
-            "requirementTitles: []", f"requirementTitles: {[self.ConvertStringToFile(m) for m in self.Requirements]}"
-        )
-        NewText = NewText.replace('issues: ""', f'issues: "{str(self.IssuesLink)}"')  # Add an issues link if available
-        NewText = NewText.replace(
-            'download: ""', f'download: "{self.Versions[self.LatestVersion]}"'
-        )  # Add download link
-        NewText = NewText.replace('date: ""', f"date: {self.Date}Z")  # Add ISO8601 time stamp date
+            NewText = NewText.replace(
+                "requirements: []",
+                f'requirements: {[(m + " " + self.Requirements[m][:2] + " " + self.Requirements[m][2:]) for m in self.Requirements]}',
+            )  # This is a bit janky since it takes in a dictionary and then we add spaces between `[MOD]>=[VER]`
+            NewText = NewText.replace(
+                "requirementTitles: []",
+                f"requirementTitles: {[self.ConvertStringToFile(m) for m in self.Requirements]}",
+            )
+            NewText = NewText.replace(
+                'issues: ""', f'issues: "{str(self.IssuesLink)}"'
+            )  # Add an issues link if available
+            NewText = NewText.replace(
+                'download: ""', f'download: "{self.Versions[self.LatestVersion]}"'
+            )  # Add download link
+            NewText = NewText.replace('date: ""', f"date: {self.Date}Z")  # Add ISO8601 time stamp date
 
-        NewText = NewText.replace("requirementTitles: []", f'requirementTitles: [{""}]')
+            NewText = NewText.replace("requirementTitles: []", f'requirementTitles: [{""}]')
 
-        NewText = NewText.replace('license: ["", ""]', f"license: {self.License}")
+            NewText = NewText.replace('license: ["", ""]', f"license: {self.License}")
 
-        # Strip all non-alphanumeric characters out for the URL
-        NewFileName = self.ConvertStringToFile(self.Name) + ".md"
+            # Strip all non-alphanumeric characters out for the URL
+            NewFileName = self.ConvertStringToFile(self.Name) + ".md"
 
-        print(f"Writing {self.Name} to _mods/{NewFileName}")
-        with open(f"../_mods/{NewFileName}", "w+") as outFile:
-            outFile.write(NewText)
+            print(f"Writing {self.Name} to _mods/{NewFileName}")
+            with open(f"../_mods/{NewFileName}", "w+") as outFile:
+                outFile.write(NewText)
+
+        except Exception as ex:
+            if self.bSoftExceptions:
+                traceback.print_exc()
+                return None
+            else:
+                raise ex
 
 
 def RequestJSONFromPage(url, bSoftExceptions):
@@ -186,6 +202,8 @@ def RequestJSONFromPage(url, bSoftExceptions):
     if response.status_code != 200:
         print(f"{url} returned {response.status_code}!")
         if bSoftExceptions:
+            print(f"Unable to find JSON at URL: {url}")
+            traceback.print_exc()
             return None
         else:
             raise Exception("URL returned incorrect status code!")
@@ -196,30 +214,36 @@ def RequestJSONFromPage(url, bSoftExceptions):
             return JSONData
         except Exception as ex:
             if bSoftExceptions:
+                print(f"Improper JSON at URL: {url}")
+                traceback.print_exc()
                 return None
             else:
                 raise ex
 
 
 def GenerateModDocs(bSoftExceptions=True):
-    # Delete all of the files in _mods/ to allow for mods to be deleted from repositories
-    for file in os.listdir("../_mods"):
-        os.remove(os.path.join("../_mods", file))
-
     print(f"Generating mod docs; bSoftExceptions == {bSoftExceptions}")
     with open("./RepoInfo.json") as repoFile:
         repositoryInfo = json.load(repoFile)
 
     print(f"List of repositories: {repositoryInfo}")
+    allMods = []
 
     for repository in repositoryInfo:
         print(f"Parsing repository: {repository}")
         modsData = RequestJSONFromPage(repository, bSoftExceptions)
-        allMods = []
+
         for modData in modsData["mods"]:
             modObject = Mod(modData, bSoftExceptions)
             modObject.ConvertToMarkdown()
             allMods += [modObject]
+
+    # Support deleting files
+
+    allModFileNames = [modData.ConvertStringToFile(modData.Name) + ".md" for modData in allMods]
+    for file in os.listdir("../_mods"):
+        if file not in allModFileNames:
+            os.remove(os.path.join("../_mods", file))
 
 
 if len(sys.argv) > 1 and sys.argv[1] == "--hard":
