@@ -44,8 +44,8 @@ jobs:
 
       # Update pip and then install dependencies
       - name: Install dependencies
+        working-directory: ./scripts
         run: |
-          cd "scripts"
           python -m pip install --upgrade pip
           pip install -r "requirements.txt"
   
@@ -55,10 +55,12 @@ jobs:
       # Run generation script
       - name: Generate hard mod documentation
         if: ${{ github.event_name == 'pull_request' }}
+        working-directory: ./scripts
         run: |
-          python GenerateModDocs.py --hard
+          python "./GenerateModDocs.py" --hard
 
       - name: Generate soft mod documentation
         if: ${{ github.event_name != 'pull_request' }}
+        working-directory: ./scripts
         run: |
-          python GenerateModDocs.py
+          python "./GenerateModDocs.py"
