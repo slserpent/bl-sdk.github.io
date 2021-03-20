@@ -82,8 +82,10 @@ In order to add your mods to this database, you need to create a JSON file and h
         "[Old Version]": "[Old Version Link]"
       },
       "[OPTIONAL] requirements": {
-        "[Requirement]": ">=[VERSION]"
-      }
+        "[Requirement]": "(>=, ==, <=)[VERSION]"
+      },
+      "license": "[Optional] See: https://github.com/bl-sdk/bl-sdk.github.io/blob/main/scripts/GenerateModDocs.py#L12 for available options",
+      "date": "[Optional] An ISO8601 formatted date time string"
     }
   ]
 }
