@@ -12,7 +12,7 @@ If you want to see more information on how to install these mods, go see the [In
 
 <p style="margin-left: 25%">
 {% for modType in page.modTypes %}
-    <span class="modTypeButton"><a href="/Types/{{modType}}" class="none">{{modType}}</a></span>
+    <span class="modTypeButton"><a href="/types/{{modType}}" class="none">{{modType}}</a></span>
 {% endfor %}
 </p>
 
