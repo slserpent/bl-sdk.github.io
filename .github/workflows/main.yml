@@ -64,3 +64,13 @@ jobs:
         working-directory: ./scripts
         run: |
           python "./GenerateModDocs.py"
+
+      # Deploy the site to the gh-pages branch **ONLY** if this is not a pull request
+      # You can't actually run the workflow from master and then change files in master because Github Page's automatic page building runs BEFORE this workflow :/
+      - name: Deploy website to gh-pages branch
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          enable_jekyll: true
