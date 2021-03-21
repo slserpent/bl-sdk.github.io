@@ -115,7 +115,7 @@ If you're tired of constantly typing in your mods `"authors": "MY NAME"`, you ca
 Mod object properties take priority over the defaults so if you have `"authors": "test1234"` in a mod object but your default is `"authors": "this is my name"`, the mod's author will be `test1234`.
 
 If you're wanting to link to a different mod on the database without making it a requirement or something, you'll want to remove all non-alphanumeric characters.
-For example: `mod-name: "Sanity Saver"` gets saved as `SanitySaver.md` so when linking to it from another page, you'll want to do `[Sanity Saver](SanitySaver)`
+For example: `mod-name: "Sanity Saver"` gets saved as `SanitySaver.md` so when linking to it from another page, you'll want to do `[Sanity Saver](/mods/SanitySaver)`
 
 
 Then you can make a [Pull Request](https://github.com/bl-sdk/bl-sdk.github.io/pulls) and edit `https://github.com/bl-sdk/bl-sdk.github.io/blob/master/scripts/RepoInfo.json` to include the **direct** link to your hosted JSON file.
