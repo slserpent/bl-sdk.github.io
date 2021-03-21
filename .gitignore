@@ -10,3 +10,7 @@ scripts/pyvenv.cfg
 scripts/Include/*
 scripts/Lib/*
 scripts/Scripts/*
+
+# This is here to allow git clones to contain a file
+# It also serves as a perfect example for deleting of files
+_mods/ignore.md
