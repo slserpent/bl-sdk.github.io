@@ -13,6 +13,7 @@ This opens up many new avenues for modding, from simply allowing modifying dynam
 Currently it supports:
 - Borderlands 2
 - Borderlands: The Pre-Sequel
+<p></p>
 
 ## SDK Installation
 
@@ -60,7 +61,19 @@ The PythonSDK itself passes a ton of functions over to the Python interface.
 All of these are included in the `unrealsdk` module which you can import from a python script.
 
 ### Writing SDK Mods
+The best set of advice is to look at other mods (see this DB for mods :P)
+The SDK's mod "API" (in Python) comes with a ton of doc strings which you should read through in order to get an understanding of how to write a mod.
 
+If you've got questions, you can always ask in our [Discord](https://discord.gg/VJXtHvh).
+There's plenty of tutorials online helping you to get proficient in Python (or coding in general),
+you should atleast understand / be proficient in object orientated programming or atleast be willing to learn these things.
+
+One of the more helpful things with writing SDK mods is looking at the game's decompiled UnrealScript code, allowing you to understand what functions do what actions:
+1. Download Gildor's [Unreal Package Decompressor](https://www.gildor.org/downloads) and [UE Explorer](https://eliotvu.com/portfolio/view/21/ue-explorer).
+2. Open up `WillowGame/CookedPCConsole` and then run the decompressor on the UPKs there. You'll really only need to decompile `WillowGame`, `Engine`, and `GearboxFramework`.
+3. Once you've decompiled the UPKs, look at them in UE Explorer, switch to object view, and then scroll/search around for whatever class.
+  - You can also export the decompiled scripts to your disk if you want to use a different text/code editor.
+![Tools -> Exporting -> Export Scripts](/assets/images/posts/mod-dev1.png)
 
 ### Adding to the Database
 In order to add your mods to this database, you need to create a JSON file and host it somewhere, following the format like:
