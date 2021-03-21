@@ -130,8 +130,32 @@ class Mod:
             if "types" in modObject:
                 self.Types = modObject["types"]
 
+            # We want to join the description into one big string if the description/tagline is an array of strings
+            assert isinstance(self.Description, str) or (
+                isinstance(self.Description, list) and isinstance(self.Description[0], str)
+            )
+
+            if isinstance(self.Description, list):
+                self.Description = "".join(self.Description)
+
             self.Description = bleach.clean(
                 self.Description,
+                tags=self.AllowedTags,
+                attributes=self.AllowedAttributes,
+                strip=True,
+            ).replace('"', "'")
+
+            # The same description checking logic but for tag lines
+
+            assert isinstance(self.Tagline, str) or (
+                isinstance(self.Tagline, list) and isinstance(self.Tagline[0], str)
+            )
+
+            if isinstance(self.Tagline, list):
+                self.Tagline = "".join(self.Tagline)
+
+            self.Tagline = bleach.clean(
+                self.Tagline,
                 tags=self.AllowedTags,
                 attributes=self.AllowedAttributes,
                 strip=True,
@@ -163,7 +187,8 @@ class Mod:
             NewText = NewText.replace('supported: ""', f'supported: "{" + ".join(self.Supports)}"')  # Add supported
             NewText = NewText.replace('tagline: ""', f'tagline: "{self.Tagline}"')  # Add tagline
             NewText = NewText.replace('description: ""', f'description: "{self.Tagline}"')  # Add embed desc
-            NewText = NewText.replace('longDescription: ""', f'longDescription: "{self.Description}"')  # Add full desc
+            fixedLongDesc = self.Description.replace("\n", "\\n").replace("\n- ", "\n  - ").replace("\n\t", "\n  ")
+            NewText = NewText.replace('longDescription: ""', f'longDescription: "{fixedLongDesc}"')  # Add full desc
             NewText = NewText.replace("categories: []", f"categories: {str(self.Types)}")  # Add types
 
             NewText = NewText.replace(
@@ -255,7 +280,24 @@ def GenerateModDocs(bSoftExceptions=True):
         print(f"Parsing repository: {repository}")
         modsData = RequestJSONFromPage(repository, bSoftExceptions)
 
+        defaultData = None
+        if "defaults" in modsData:
+            defaultData = modsData["defaults"]
+
         for modData in modsData["mods"]:
+            # Default checkers
+            if defaultData != None:
+                if "authors" not in modData and "authors" in defaultData:
+                    modData["authors"] = defaultData["authors"]
+                if "source" not in modData and "source" in defaultData:
+                    modData["source"] = defaultData["source"]
+                if "supports" not in modData and "supports" in defaultData:
+                    modData["supports"] = defaultData["supports"]
+                if "license" not in modData and "license" in defaultData:
+                    modData["license"] = defaultData["license"]
+                if "types" not in modData and "types" in defaultData:
+                    modData["types"] = defaultData["types"]
+
             modObject = Mod(modData, bSoftExceptions)
             modObject.ConvertToMarkdown()
             allMods += [modObject]
