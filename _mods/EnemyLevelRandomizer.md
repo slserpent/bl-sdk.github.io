@@ -18,7 +18,7 @@ issues: ""
 download: "https://github.com/apple1417/bl-sdk-mods/raw/master/EnemyLevelRandomizer/EnemyLevelRandomizer.zip"
 license: ['GNU GPLv3', 'gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
-date: 2021-03-21T22:23:28.208447Z # Date of when the generation happened (?)
+date: 2021-03-21T23:22:38.061978Z # Date of when the generation happened (?)
 ---
 **Contents**
 * TOC
