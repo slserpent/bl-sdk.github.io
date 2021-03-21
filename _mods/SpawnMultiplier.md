@@ -18,7 +18,7 @@ issues: ""
 download: "https://github.com/apple1417/bl-sdk-mods/raw/master/SpawnMultiplier/SpawnMultiplier.zip"
 license: ['GNU GPLv3', 'gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
-date: 2021-03-21T21:10:58.159961Z # Date of when the generation happened (?)
+date: 2021-03-21T21:19:58.310466Z # Date of when the generation happened (?)
 ---
 **Contents**
 * TOC
