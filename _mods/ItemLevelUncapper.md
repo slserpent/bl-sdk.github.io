@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Fixes the level cap of most items so that they continue spawning past level 100." # A short description of the mod itself.
 description: "Fixes the level cap of most items so that they continue spawning past level 100." # This is set in order to keep the SEO proper
-longDescription: "This mod is useless by itself, it should be used alongside the hexedit to increase the player level cap.\n\nFixes the level cap of most items so that they continue spawning past level 100.\n\nNote that past level 127, items cannot be serialized corrently, and will revert to a lower level on SQ. Use [Sanity Saver](SanitySaver) to fix this.    \nAlso note that there may still be various other issues with an increased level cap, this only fixes that most items stop spawning." # Description of what the mod can do
+longDescription: "This mod is useless by itself, it should be used alongside the hexedit to increase the player level cap.\n\nFixes the level cap of most items so that they continue spawning past level 100.\n\nNote that past level 127, items cannot be serialized corrently, and will revert to a lower level on SQ. Use [Sanity Saver](/mods/SanitySaver) to fix this.    \nAlso note that there may still be various other issues with an increased level cap, this only fixes that most items stop spawning." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
@@ -18,7 +18,7 @@ issues: ""
 download: "https://github.com/apple1417/bl-sdk-mods/raw/master/ItemLevelUncapper/ItemLevelUncapper.zip"
 license: ['GNU GPLv3', 'gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
-date: 2021-03-21T21:19:58.310466Z # Date of when the generation happened (?)
+date: 2021-03-21T22:23:28.208447Z # Date of when the generation happened (?)
 ---
 **Contents**
 * TOC
