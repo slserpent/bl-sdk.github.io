@@ -117,5 +117,7 @@ Mod object properties take priority over the defaults so if you have `"authors":
 If you're wanting to link to a different mod on the database without making it a requirement or something, you'll want to remove all non-alphanumeric characters.
 For example: `mod-name: "Sanity Saver"` gets saved as `SanitySaver.md` so when linking to it from another page, you'll want to do `[Sanity Saver](/mods/SanitySaver)`
 
+You can also implement other licenses that aren't supported by declaring it as a list: 
+`"license": ["User Friendly Name", "Full URL Link"]`
 
 Then you can make a [Pull Request](https://github.com/bl-sdk/bl-sdk.github.io/pulls) and edit `https://github.com/bl-sdk/bl-sdk.github.io/blob/master/scripts/RepoInfo.json` to include the **direct** link to your hosted JSON file.
