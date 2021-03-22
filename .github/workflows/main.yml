@@ -26,7 +26,10 @@ jobs:
     name: Page Generation
 
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+
+    env:
+      RUBYOPT: "-E utf-8"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,15 +43,26 @@ jobs:
       - name: Python installation
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8.3
+          python-version: 3.8
 
-      # Update pip and then install dependencies
+      - name: Cache Pip
+        id: cache-pip
+        uses: actions/cache@v2
+        with:
+          # This path is specific to Ubuntu
+          path: ~/.cache/pip
+          # Look to see if there is a cache hit for the corresponding requirements file
+          key: ${{ runner.os }}-pip-${{ hashFiles('./scripts/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+
+      # Update pip if the cache isn't updated / it's not cached
       - name: Install dependencies
+        if: steps.cache-pip.outputs.cache-hit != 'true'
         working-directory: ./scripts
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r "requirements.txt"
-  
+        run: pip install -r "requirements.txt"
+        
       # Mod documentation is generated "softly" when the task has been scheduled
       # If mod documentation is faulty, it'll silently fail and not update the page of the given mod
 
@@ -56,22 +70,41 @@ jobs:
       - name: Generate hard mod documentation
         if: ${{ github.event_name == 'pull_request' }}
         working-directory: ./scripts
-        run: |
-          python "./GenerateModDocs.py" --hard
+        run: python "./GenerateModDocs.py" --hard
 
       - name: Generate soft mod documentation
         if: ${{ github.event_name != 'pull_request' }}
         working-directory: ./scripts
-        run: |
-          python "./GenerateModDocs.py"
+        run: python "./GenerateModDocs.py"
 
-      # Deploy the site to the gh-pages branch **ONLY** if this is not a pull request
-      # You can't actually run the workflow from master and then change files in master because Github Page's automatic page building runs BEFORE this workflow :/
+      # Now we're going to install ruby and other dependencies in order to do test builds of the site
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
+          bundler-cache: true # Runs 'bundle install' and caches installed gems automatically
+      
+      # Build the site, include trace just for more info 
+      - name: Build Site
+        run: bundle exec jekyll build --profile --trace
+      
+      # Run html-proofer on the built site, will handle dead links, etc
+      # It's best  to only run this on PR because otherwise it will stop all future builds
+      - name: Proofread HTML -- Hard
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          bundle exec htmlproofer --log-level :debug ./_site
+      
+      - name: Proofread HTML -- Soft
+        if: ${{ github.event_name != 'pull_request' }}
+        run: |
+          bundle exec htmlproofer --log-level :debug ./_site
+        continue-on-error: true
+
       - name: Deploy website to gh-pages branch
         if: ${{ github.event_name != 'pull_request' }}
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           enable_jekyll: true
-          commit_message: ${{ github.event.head_commit.message }}

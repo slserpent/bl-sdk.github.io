@@ -11,6 +11,12 @@ scripts/Include/*
 scripts/Lib/*
 scripts/Scripts/*
 
+# Ignore the act files for locally testing the github workflows
+act/*
+
 # This is here to allow git clones to contain a file
 # It also serves as a perfect example for deleting of files
 _mods/ignore.md
+
+# Ignore the link log, this is used in the workflows
+links.log

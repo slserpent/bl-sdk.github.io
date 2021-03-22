@@ -9,6 +9,6 @@ Right now it supports:
 - Borderlands 2
 - Borderlands: The Pre-Sequel!
 
-It is mainly developed by [Abahbob](https://github.com/Abahbob), [FromDarkHell](https://github.com/FromDarkHell), [apple1417](https://github.com/apple1417).
+It is mainly developed by [Matt Hurd / Abahbob](https://github.com/Matt-Hurd), [FromDarkHell](https://github.com/FromDarkHell), [apple1417](https://github.com/apple1417).
 
 Most conversations about the PythonSDK happens over on our [Discord](https://discord.gg/VJXtHvh)

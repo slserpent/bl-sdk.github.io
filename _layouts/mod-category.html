@@ -51,7 +51,6 @@
                   <a href="{{ site.baseurl }}{{ mod.url }}">{{ mod.title }}</a> by {{mod.authors}} (Version: {{mod.version}})
                 </li>
                 <ul>
-                  <li>Last Updated: {{ mod.date | date: "%-d %B %Y"}}</li>
                   <li>Description: {{mod.tagline}}</li>
                   <li>Supports: <code class="language-plaintext highlighter-rouge">{{mod.supported}}</code></li>
                   <li>Types: {{ mod.categories | array_to_sentence_string }}</li>

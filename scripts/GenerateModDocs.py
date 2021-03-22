@@ -83,6 +83,16 @@ class Mod:
     def ConvertStringToFile(self, string):
         return "".join([ch if ch.isalnum() else "" for ch in string])
 
+    def TestHTTPLink(self, url, bSoftExceptions):
+        response = requests.get(url)
+        if response.status_code != 200:
+            print(f"{url} returned {response.status_code}!")
+            if bSoftExceptions:
+                return False
+            else:
+                raise Exception("URL returned incorrect status code!")
+        return True
+
     def __init__(self, modObject, bSoftExceptions):
         print(f"Creating new mod with mod object: {modObject}")
         try:
@@ -124,9 +134,6 @@ class Mod:
 
             self.Supports = modObject["supports"]
 
-            if "license" in modObject:
-                self.License = modObject["license"]
-
             if "types" in modObject:
                 self.Types = modObject["types"]
 
@@ -162,8 +169,19 @@ class Mod:
             ).replace('"', "'")
 
             if "license" in modObject:
-                assert modObject["license"] in self.ValidLicenses
-                self.License = [modObject["license"], self.ValidLicenses[modObject["license"]]]
+                assert isinstance(modObject["license"], str) or (
+                    isinstance(modObject["license"], list) and len(modObject["license"]) == 2
+                )
+
+                if isinstance(modObject["license"], str):
+                    modObject["license"] in self.ValidLicenses
+                    self.License = [
+                        modObject["license"],
+                        "https://choosealicense.com/licenses/" + self.ValidLicenses[modObject["license"]],
+                    ]
+                elif isinstance(modObject["license"], list):
+                    assert self.TestHTTPLink(modObject["license"][1], bSoftExceptions)
+                    self.License = modObject["license"]
 
             if "date" in modObject:
                 self.Date = modObject["date"]
@@ -214,24 +232,9 @@ class Mod:
             # Strip all non-alphanumeric characters out for the URL
             NewFileName = self.ConvertStringToFile(self.Name) + ".md"
 
-            print(f"Writing {self.Name} to _mods/{NewFileName}")
-            if not os.path.exists(f"../_mods/{NewFileName}"):
-                with open(f"../_mods/{NewFileName}", "w+") as outFile:
-                    outFile.write(NewText)
-            else:  # Handle date time checking for updates
-                with open(f"../_mods/{NewFileName}", "r") as originalModFile:
-                    # Replace the date time
-                    oldLines = re.sub(
-                        "date: \d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?(([+-]\d\d:\d\d)|Z)?",
-                        'date: ""',
-                        "".join(originalModFile.readlines()),
-                    )
-                if oldLines == NewText.replace(f"date: {self.Date}Z", 'date: ""'):
-                    return None
-                else:
-                    with open(f"../_mods/{NewFileName}", "w+") as outFile:
-                        outFile.write(NewText)
-
+            print(f"\tWriting {self.Name} to _mods/{NewFileName}")
+            with open(f"../_mods/{NewFileName}", "w+") as outFile:
+                outFile.write(NewText)
         except Exception as ex:
             if self.bSoftExceptions:
                 traceback.print_exc()
