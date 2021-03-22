@@ -18,7 +18,6 @@ issues: ""
 download: ""
 license: ["", ""] # License name, link about the license from https://choosealicense.com/
 
-date: "" # Date of when the generation happened (?)
 ---
 **Contents**
 * TOC
@@ -28,7 +27,6 @@ date: "" # Date of when the generation happened (?)
 
 Mod by: {{page.authors}}
 Current Version: {{page.version}}
-  - Mod Page Updated: {{ page.date | date: "%-d %B %Y"}}
 
 <p></p>
 ### Description
@@ -77,5 +75,5 @@ Report issues here: [{{page.issues}}]({{page.issues}})
 {% endif %}
 
 {% if page.license.size > 0 %}
-This mod is licensed using {{page.license[0]}} <sup>[?](https://choosealicense.com/licenses/{{page.license[1]}})
+This mod is licensed using {{page.license[0]}} <sup>[?]({{page.license[1]}})
 {% endif %}

@@ -16,9 +16,8 @@ requirementTitles: [] # The link-friendly name of the requirements
 
 issues: ""
 download: "https://github.com/apple1417/bl-sdk-mods/raw/master/TrueDamageLogger/TrueDamageLogger.zip"
-license: ['GNU GPLv3', 'gpl-3.0'] # License name, link about the license from https://choosealicense.com/
+license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
-date: 2021-03-21T23:22:38.061978Z # Date of when the generation happened (?)
 ---
 **Contents**
 * TOC
@@ -28,7 +27,6 @@ date: 2021-03-21T23:22:38.061978Z # Date of when the generation happened (?)
 
 Mod by: {{page.authors}}
 Current Version: {{page.version}}
-  - Mod Page Updated: {{ page.date | date: "%-d %B %Y"}}
 
 <p></p>
 ### Description
@@ -77,5 +75,5 @@ Report issues here: [{{page.issues}}]({{page.issues}})
 {% endif %}
 
 {% if page.license.size > 0 %}
-This mod is licensed using {{page.license[0]}} <sup>[?](https://choosealicense.com/licenses/{{page.license[1]}})
+This mod is licensed using {{page.license[0]}} <sup>[?]({{page.license[1]}})
 {% endif %}

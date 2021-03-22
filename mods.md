@@ -21,7 +21,6 @@ If you want to see more information on how to install these mods, go see the [In
 {% for mod in site.mods %}
 
 * [{{ mod.title }}]({{ site.baseurl }}{{ mod.url }}) by {{mod.authors}} (Version: {{mod.version}})
-    - Last Updated: {{ mod.date | date: "%-d %B %Y"}}
     - Description: {{mod.tagline}}
     - Supports: `{{mod.supported}}`
     - Types: {{ mod.categories | array_to_sentence_string }}
