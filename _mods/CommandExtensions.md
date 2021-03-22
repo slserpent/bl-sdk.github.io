@@ -38,7 +38,7 @@ Currently Supports: `{{page.supported}}`
 {% if page.categories.size > 0 %}
 Categories:
 {% for category in page.categories %}
-  * {{category}}
+  * [{{category}}](/types/{{category}})
 {% endfor %}
 <p></p>
 {% endif %}
