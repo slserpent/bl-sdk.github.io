@@ -44,19 +44,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
-
-      - name: Cache Pip
-        id: cache-pip
-        uses: actions/cache@v2
-        with:
-          # This path is specific to Ubuntu
-          path: ~/.cache/pip
-          # Look to see if there is a cache hit for the corresponding requirements file
-          key: ${{ runner.os }}-pip-${{ hashFiles('./scripts/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-            ${{ runner.os }}-
-
+          
       # Update pip if the cache isn't updated / it's not cached
       - name: Install dependencies
         if: steps.cache-pip.outputs.cache-hit != 'true'
