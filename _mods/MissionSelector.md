@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Lets you switch through missions with configurable hotkeys like in Borderlands 3." # A short description of the mod itself.
 description: "Lets you switch through missions with configurable hotkeys like in Borderlands 3." # This is set in order to keep the SEO proper
-longDescription: "Lets you switch through missions with configurable hotkeys like in Borderlands 3.\nFeatures:\n- jump forwards and backwards in the active missions\n- configurable hotkeys\n\nNotes:\n- since this is often not the case with SDK mods: yes, this has multiplayer support if all players have it installed\n\nIf you found a bug or you have a feature request, please use our issue tracker linked below.\nIn case you need support, please join our [Discord](https://discordapp.com/invite/Q3qxws6)" # Description of what the mod can do
+longDescription: "Lets you switch through missions with configurable hotkeys like in Borderlands 3.\n\nFeatures:\n- jump forwards and backwards in the active missions\n- configurable hotkeys\n\nNotes:\n- since this is often not the case with SDK mods: yes, this has multiplayer support if all players have it installed\n\nIf you found a bug or you have a feature request, please use our issue tracker linked below.\nIn case you need support, please join our [Discord](https://discordapp.com/invite/Q3qxws6)." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: ['EridiumLib >= 0.3.2'] # Requirements for the given mod
