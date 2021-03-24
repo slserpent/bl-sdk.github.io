@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Holds utility functions for some mods." # A short description of the mod itself.
 description: "Holds utility functions for some mods." # This is set in order to keep the SEO proper
-longDescription: "Holds utility functions for some mods." # Description of what the mod can do
+longDescription: "Holds utility functions for some mods.\n\nEverything related to versions and their release notes can be found in the [changelog](https://github.com/RLNT/bl2_eridium/blob/main/CHANGELOG.md).\nIf you found a bug or you have a feature request, please use our issue tracker linked below.\nIn case you need support, please join our [Discord](https://discordapp.com/invite/Q3qxws6)." # Description of what the mod can do
 categories: ['Library'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
