@@ -51,13 +51,18 @@ class Mod:
         "blockquote",
         "code",
         "video",
+        "details",
+        "summary",
     ]
 
     # A dictionary of allowed attributes for the HTML sanitizer
     # See: https://bleach.readthedocs.io/en/latest/clean.html#as-a-dict
     AllowedAttributes = {
-        "a": ["href", "rel"],  # Links can have an href
+        "a": ["href", "rel", "title"],  # Links can have an href
         "img": ["src", "alt"],  # Images can have src and alt
+        "abbr": ["title"],  # Abbreviations
+        "acroynym": ["title"],  # Acronyms
+        "*": ["align", "width", "height"],  # All types can have align / width / height
     }
 
     Name = ""  # Name of the given mod
@@ -228,6 +233,8 @@ class Mod:
             NewText = NewText.replace("requirementTitles: []", f'requirementTitles: [{""}]')
 
             NewText = NewText.replace('license: ["", ""]', f"license: {self.License}")
+
+            NewText = NewText.replace('source: ""', f'source: "{self.SourceCode}"')
 
             # Strip all non-alphanumeric characters out for the URL
             NewFileName = self.ConvertStringToFile(self.Name) + ".md"
