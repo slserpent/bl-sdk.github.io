@@ -3,7 +3,7 @@ layout: mod
 
 authors: "Chronophylos, Relentless" # Authors of the mod
 title: EridiumLib # Title of the mod
-version: "0.4.0" # Version of the mod
+version: "0.4.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Holds utility functions for some mods." # A short description of the mod itself.
@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/RLNT/bl2_eridium/issues"
-download: "https://github.com/RLNT/bl2_eridium/releases/tag/v0.4.0"
+download: "https://github.com/RLNT/bl2_eridium/releases/tag/v0.4.1"
 license: ['GNU Lesser General Public License v2.1', 'https://github.com/RLNT/bl2_eridium/blob/main/LICENSE'] # License name, link about the license from https://choosealicense.com/
 
 ---

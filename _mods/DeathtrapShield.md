@@ -3,7 +3,7 @@ layout: mod
 
 authors: "Relentless" # Authors of the mod
 title: Deathtrap Shield # Title of the mod
-version: "1.0.0" # Version of the mod
+version: "1.0.1" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Gives Deathtrap its own configurable shield from the inventory of Gaige." # A short description of the mod itself.
@@ -11,11 +11,11 @@ description: "Gives Deathtrap its own configurable shield from the inventory of 
 longDescription: "Gives Deathtrap its own configurable shield from the inventory of Gaige.\n\nFeatures:\n- Deathtrap can use its own shield and no longer shares the shield with Gaige\n- you can define which shield to use in the inventory\n- configurable hotkey\n\nNotes:\n- since this is often not the case with SDK mods: yes, this has multiplayer support\n- the default behaviour of the skill applies and the shield of Gaige will be shared when:\n  - you didn't unlock the skill sharing ability\n  - you don't set a Deathtrap shield\n  - the shield level is too high; you need to be able to equip it too\n  - you equip the Deathtrap shield to Gaige\n- the Deathtrap shield will lose its status when:\n  - you set a new Deathtrap shield while already having one\n  - you equip the Deathtrap shield to Gaige\n  - you throw the Deathtrap shield on the ground\n  - you mark it as trash or favorite\n  - another character that is not a Mechromancer puts it in their inventory\n- you can only set one Deathtrap shield at a time\n- only Mechromancers can set Deathtrap shields and see the status\n- the hotkey to set the Deathtrap shield can be modified in the modded keybinds\n- if you have a Deathtrap shield set, you won't be able to edit your save game in the SaveGame Editor unless you rejoin the game and remove the shield status, this can't be fixed\n\nEverything related to versions and their release notes can be found in the [changelog](https://github.com/RLNT/bl2_deathtrapshield/blob/main/CHANGELOG.md).\nIf you found a bug or you have a feature request, please use our issue tracker linked below.\nIn case you need support, please join our [Discord](https://discordapp.com/invite/Q3qxws6)." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: ['EridiumLib >= 0.4.0'] # Requirements for the given mod
+requirements: ['EridiumLib >= 0.4.1'] # Requirements for the given mod
 requirementTitles: ['EridiumLib'] # The link-friendly name of the requirements
 
 issues: "https://github.com/RLNT/bl2_deathtrapshield/issues"
-download: "https://github.com/RLNT/bl2_deathtrapshield/releases/tag/v1.0.0"
+download: "https://github.com/RLNT/bl2_deathtrapshield/releases/tag/v1.0.1"
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
 ---
