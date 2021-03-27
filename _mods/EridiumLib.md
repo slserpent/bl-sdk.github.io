@@ -16,6 +16,7 @@ requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/RLNT/bl2_eridium/issues"
 download: "https://github.com/RLNT/bl2_eridium/releases/tag/v0.4.1"
+source: "https://github.com/RLNT/bl2_eridium" # Link to source code
 license: ['GNU Lesser General Public License v2.1', 'https://github.com/RLNT/bl2_eridium/blob/main/LICENSE'] # License name, link about the license from https://choosealicense.com/
 
 ---
@@ -72,6 +73,10 @@ You can download {{page.title}} here: [Download Link]({{page.download}})
 
 {% if page.issues != "" %}
 Report issues here: [{{page.issues}}]({{page.issues}})
+{% endif %}
+
+{% if page.source != "" %}
+View the source code here: [Source Code]({{page.source}})
 {% endif %}
 
 {% if page.license.size > 0 %}

@@ -16,6 +16,7 @@ requirementTitles: [] # The link-friendly name of the requirements
 
 issues: ""
 download: "https://github.com/juso40/bl2sdk_Mods/raw/master/Pokelands/Pokelands.zip"
+source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
 ---
@@ -72,6 +73,10 @@ You can download {{page.title}} here: [Download Link]({{page.download}})
 
 {% if page.issues != "" %}
 Report issues here: [{{page.issues}}]({{page.issues}})
+{% endif %}
+
+{% if page.source != "" %}
+View the source code here: [Source Code]({{page.source}})
 {% endif %}
 
 {% if page.license.size > 0 %}

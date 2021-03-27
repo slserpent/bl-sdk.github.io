@@ -16,6 +16,7 @@ requirementTitles: ['EridiumLib'] # The link-friendly name of the requirements
 
 issues: "https://github.com/RLNT/bl2_skilltoggles/issues"
 download: "https://github.com/RLNT/bl2_skilltoggles/releases/tag/v1.3.1"
+source: "https://github.com/RLNT/bl2_skilltoggles" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
 ---
@@ -72,6 +73,10 @@ You can download {{page.title}} here: [Download Link]({{page.download}})
 
 {% if page.issues != "" %}
 Report issues here: [{{page.issues}}]({{page.issues}})
+{% endif %}
+
+{% if page.source != "" %}
+View the source code here: [Source Code]({{page.source}})
 {% endif %}
 
 {% if page.license.size > 0 %}
