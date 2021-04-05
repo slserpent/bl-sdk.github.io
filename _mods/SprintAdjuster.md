@@ -1,23 +1,23 @@
 ---
 layout: mod
 
-authors: "apple1417" # Authors of the mod
-title: SDK Autorun # Title of the mod
-version: "1.5" # Version of the mod
-supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+authors: "plu5" # Authors of the mod
+title: Sprint Adjuster # Title of the mod
+version: "1.0.0" # Version of the mod
+supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Automatically runs console commands/SDK mods for you when you reach the main menu." # A short description of the mod itself.
-description: "Automatically runs console commands/SDK mods for you when you reach the main menu." # This is set in order to keep the SEO proper
-longDescription: "Automatically runs console commands/SDK mods for you when you reach the main menu. Configurable entirely through an in game menu.\n\nNote that if you get stuck in a crash loop, you can disable this by deleting the `settings.json` that gets created in the mod directory." # Description of what the mod can do
+tagline: "Change sprinting speed." # A short description of the mod itself.
+description: "Change sprinting speed." # This is set in order to keep the SEO proper
+longDescription: "- Change speed when sprinting, while preserving normal speed when not sprinting.\n- Optionally set Air Control to allow better control in the air with the movement keys, to have a better chance of stopping yourself from flinging off a cliff for instance.\n- Configurable keybinding to allow turning on and off on the fly." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: ['AsyncUtil >= 1.0', 'UserFeedback >= 1.3'] # Requirements for the given mod
-requirementTitles: ['AsyncUtil', 'UserFeedback'] # The link-friendly name of the requirements
+requirements: [] # Requirements for the given mod
+requirementTitles: [] # The link-friendly name of the requirements
 
-issues: ""
-download: "https://github.com/apple1417/bl-sdk-mods/raw/master/SDKAutorun/SDKAutorun.zip"
-source: "https://github.com/apple1417/bl-sdk-mods/" # Link to source code
-license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
+issues: "https://github.com/plu5/p-borderlands/issues"
+download: "https://github.com/plu5/p-borderlands/releases/tag/v1.0.0"
+source: "https://github.com/plu5/p-borderlands/blob/main/SprintAdjuster" # Link to source code
+license: [] # License name, link about the license from https://choosealicense.com/
 
 ---
 **Contents**
