@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: PyImgui # Title of the mod
-version: "dev" # Version of the mod
+version: "1.0" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Imgui python bindings library." # A short description of the mod itself.

@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: Inventory Editor # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Edit/Add items to your inventory while ingame!" # A short description of the mod itself.
@@ -11,7 +11,7 @@ description: "Edit/Add items to your inventory while ingame!" # This is set in o
 longDescription: "Allows you to add/edit items to/in your inventory, directly ingame.\nThis mod will work with any constructed item, this means its 100% compatible with ``Exodus``and other mods that add new Items to the game.\nThe default button to open up the Inventory Editor UI is binded to ``F1``.\n" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: ['PyImgui  '] # Requirements for the given mod
+requirements: ['PyImgui >= 1.0'] # Requirements for the given mod
 requirementTitles: ['PyImgui'] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
