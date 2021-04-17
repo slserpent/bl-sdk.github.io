@@ -14,7 +14,7 @@ If you have a question that is not answered here, you can search on [Discord](ht
 
 # User FAQ
 ## How to start using PythonSDK mods?
-Follow the steps described on [the main page]({{ site.baseurl }}{% link index.md %}).
+Follow the steps described on the [main page](/).
 
 ## Can I use PythonSDK mods with text mods?
 Yes. Usual compatibility concerns still apply, like if several mods change the same variables they will interfere with each other. This is the case regardless of whether the mods are PythonSDK mods or text mods.
@@ -23,25 +23,34 @@ Yes. Usual compatibility concerns still apply, like if several mods change the s
 Text mods can only modify objects once; when run. PythonSDK mods can modify dynamically generated objects and run arbitrary game functions whenever they please.
 
 ## Why do I not see Mods menu after installation?
-- Ensure you have all the required files; your `Binaries/Win32` folder should have `ddraw.dll`, `pythonXX.dll`, `pythonXX.zip`, and the `Mods` subfolder. The `Mods` subfolder should contain an `__init__.py` and the various mods folders (most importantly `ModMenu`) which should each also have an `__init__.py`.
-- To be certain, download [latest](https://github.com/bl-sdk/PythonSDK/releases) again and extract and overwrite the files. [Video demonstration](https://www.youtube.com/watch?v=nvTYjFjQ-HI).
+- Ensure you have all the required files; your `Binaries/Win32` folder should have:
+    * `ddraw.dll`, 
+    * `pythonXX.dll`, 
+    * `pythonXX.zip`,
+    * A folder named `Mods` **exactly as capitalized**. 
+    The `Mods` subfolder should contain an `__init__.py` and the various mods folders (most importantly `ModMenu`) which should each also have an `__init__.py`.
+- To be certain, download [latest](https://github.com/bl-sdk/PythonSDK/releases) again and extract and overwrite the files. 
 - Ensure you have [Microsoft Visual C++ Redistributable](https://aka.ms/vs/16/release/vc_redist.x86.exe) installed.
 - Console output or the contents of `python-sdk.log` in your `Binaries/Win32` folder may contain clues as to what went wrong.
+
+[Video Demonstration](https://www.youtube.com/watch?v=nvTYjFjQ-HI).
 
 If you are on Linux: PythonSDK does not yet work natively on Linux, but it seems to work well under SteamPlay/Proton and Wine. See [The README section on Linux](https://github.com/bl-sdk/PythonSDK#linux-steamplayproton-and-wine).
 
 ## Why does my game crash/freeze?
 If you are running a mod or modpack that modifies skills (such as Skill Randomizer, Exodus), it will crash if you try to make a new character with those mods enabled. First make the new character, then enable those mods.
 
-If that is not your situation, try to narrow down the mod that causes the issue by disabling all other mods and restarting to see if it still happens, and when you find the culprit: contact the mod author, if it’s a large modpack they may have a discord server you can ask on, or create an issue on their mod’s repository if there is one.
+If that is not your situation, try to narrow down the mod that causes the issue by disabling all other mods and restarting to see if it still happens, and when you find the culprit: contact the mod author, if it's a large modpack they may have a discord server you can ask on, or create an issue on their mod's repository if there is one.
 
 <hr/>
 
 # Developer FAQ
+
+
 ## How do I create a new mod?
 1. Create a new folder in the Mods folder
 2. Create an `__init__.py` within it with the following basic template:
-   ```python
+```python
    import unrealsdk
    from Mods import ModMenu
    
@@ -50,14 +59,14 @@ If that is not your situation, try to narrow down the mod that causes the issue 
        Author: str = "My Name"
        Description: str = "My Mod Description"
        Version: str = "1.0.0"
-       SupportedGames: ModMenu.Game = ModMenu.Game.BL2 | ModMenu.Game.TPS  # Either BL2 or TPS, or both with | in between
-       Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library, or several with | in between
+       SupportedGames: ModMenu.Game = ModMenu.Game.BL2 | ModMenu.Game.TPS  # Either BL2 or TPS; bitwise OR'd together
+       Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility  # One of Utility, Content, Gameplay, Library; bitwise OR'd together
        
    instance = MyMod()
    
    ModMenu.RegisterMod(instance)
-   ```
-3. Launch the game. Your mod should now appear in the mod manager. If it doesn’t, console output / contents of `python-sdk.log` (which can be found in your `Win32` folder, one folder up from the Mods folder) should give a clue as to why.
+```
+3. Launch the game. Your mod should now appear in the mod manager. If it doesn't, console output / contents of `python-sdk.log` (which can be found in your `Win32` folder, one folder up from the Mods folder) should give a clue as to why.
 
 ## How to reload my mod without having to restart the game?
 Add the following to your `__init__.py` **before** RegisterMod is called:
@@ -77,16 +86,15 @@ if __name__ == "__main__":
 ```
 Now you should be able to reload your mod by running `pyexec ModFolderName/__init__.py` (change ModFolderName to the name of the folder your mod is in).
 
-Note that restarting your mod like this is not quite the same as restarting the game, as it does not restart game state, so it will not be a clean slate and your mod could potentially behave differently than if you were to restart.
-A good practice is to restore anything you’ve changed back to what it was in your mod class `Disable` method.
+**Keep in mind** that restarting your mod like this is not quite the same as restarting the game, as it does not restart game state, so it will not be a clean slate and your mod could potentially behave differently than if you were to restart.
+A good practice is to restore anything you've changed back to what it was in your mod class `Disable` method.
 
-## How to make my mod do things when it’s enabled?
-Override the `Enable` instance method, e.g.:
-
+## How to make my mod do things when it's enabled?
+Override the `Enable` instance method, for example:
 ```python
 class MyMod(ModMenu.SDKMod):
     ...
-    def Enable(self):
+    def Enable(self) -> None:
         super.Enable()
         unrealsdk.Log("I ARISE!")
 ```
@@ -95,10 +103,8 @@ class MyMod(ModMenu.SDKMod):
 `Log` will log a message to the console. Now when you launch the game and enable your mod you should see "I ARISE!" in the console output. Replace that with whatever you want to do upon enable.
 
 Cleanup functionality can go in the `Disable` instance method:
-
 ```python
-    ...
-    def Disable(self):
+    def Disable(self) -> None:
         unrealsdk.Log("I sleep.")
         super.Disable()
 ```
@@ -120,7 +126,7 @@ For example, to set it to `LoadWithSettings` add the following class variable to
 ```python
 SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
 ```
-This will save your mod’s enabled state in settings.json, and the mod will be enabled when the mod settings are loaded.
+This will save your mod's enabled state in settings.json, and the mod will be enabled when the mod settings are loaded.
 
 ## How to add options to the options menu?
 Instantiate your options and add them to the `Options` instance variable of your mod class.
@@ -130,8 +136,7 @@ See `ModMenu/Options.py` for available option classes you can use.
 Here is an example for adding a `Boolean` option:
 ```python
 class MyMod(ModMenu.SDKMod):
-    ...
-    def __init__(self):
+    def __init__(self) -> None:
         self.MyBoolean = ModMenu.Options.Boolean(
             Caption="Set My Boolean",
             Description="Whether My Boolean should be on.",
@@ -144,13 +149,12 @@ class MyMod(ModMenu.SDKMod):
         ]
 ```
 
-This `Boolean` should now appear in the options menu, under the name of your mod (provided the mod is enabled). You can get the value from it by accessing `self.MyBoolean.CurrentValue`, which, since it’s a boolean, will be True or False.
+This `Boolean` should now appear in the options menu, under the name of your mod (provided the mod is enabled). You can get the value from it by accessing `self.MyBoolean.CurrentValue`, which, since it's a boolean, will be True or False.
 
 To handle changes to this value in real time, you can override the method `ModOptionChanged`. For example:
 
 ```python
-    ...
-    def ModOptionChanged(self, option, new_value):
+    def ModOptionChanged(self, option, new_value) -> None:
         if option == self.MyBoolean:
             if new_value:
                 unrealsdk.Log("You turned on My Boolean")
@@ -171,7 +175,7 @@ Here is an example:
 
 ```python
 ...
-def sayHi():
+def sayHi() -> None:
     unrealsdk.Log("hi")
 
 class MyMod(ModMenu.SDKMod):
@@ -204,17 +208,17 @@ class MyMod(ModMenu.SDKMod):
         return True
 ```
 
-If you do not return True the function you hooked into will not continue executing as normal, which is sometimes desired, but if you do not want that remember to return True. If I forget return True in this case, I spawn in a weird place, don’t have any money, eridium, or anything in my inventory, among other things, because we diverted the logic ordinarily handling all that.
+If you return True the function you hooked into will not continue executing as normal, which is sometimes desired, but if you do not want that remember to return True. If I forget return True in this case, I spawn in a weird place, don't have any money, eridium, or anything in my inventory, among other things, because we diverted the logic ordinarily handling all that.
 
 ## How to know what game objects to modify?
-* Look through decompiled UPKs, as explained in [the Writing SDK Mods section on the main page]({{ site.baseurl }}{% link index.md %}#writing-sdk-mods)
-* Look through objects in BLCM Object Explorer, and other tools described in [BLCM wiki](https://github.com/BLCM/BLCMods/wiki)
-* Look at the source of [existing PythonSDK mods]({{ site.baseurl }}{% link mods.md %})
+* Look through decompiled UPKs, as explained in [Writing SDK Mods]({{ site.baseurl }}{% link index.md %}#writing-sdk-mods) section
+* Look through objects in BLCMM Object Explorer, and other tools described in the [BLCMods Wiki](https://github.com/BLCM/BLCMods/wiki)
+* Look at the source of existing [PythonSDK Mods]({{ site.baseurl }}{% link mods.md %})
 * Even source of text mods can help, as they can tell you what objects you can modify.
 
-You can discuss what you’re trying to do on the [Discord](https://discord.gg/VJXtHvh), and maybe people will chime in to help.
+You can discuss what you're trying to do on the [Discord](https://discord.gg/VJXtHvh), and people will probably chime in to help you out!
 
 ## How to publish my mod?
-Upload your mod(s) to a public repository, then to add it to this site follow the steps on [the Adding to the Database section on the main page]({{ site.baseurl }}{% link index.md %}#adding-to-the-database).
+Upload your mod(s) to a public repository, then to add it to this site follow the steps on [Adding to the Database]({{ site.baseurl }}{% link index.md %}#adding-to-the-database) in the main page.
 
 Note that you should not commit `settings.json` file nor `__pycache__`, as they are automatically generated.
