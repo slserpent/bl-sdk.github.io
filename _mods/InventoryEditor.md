@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: Inventory Editor # Title of the mod
-version: "1.2" # Version of the mod
+version: "1.3" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Edit/Add items to your inventory while ingame!" # A short description of the mod itself.
