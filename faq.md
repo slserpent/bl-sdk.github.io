@@ -86,8 +86,7 @@ if __name__ == "__main__":
 ```
 Now you should be able to reload your mod by running `pyexec ModFolderName/__init__.py` (change ModFolderName to the name of the folder your mod is in).
 
-**Keep in mind** that restarting your mod like this is not quite the same as restarting the game, as it does not restart game state, so it will not be a clean slate and your mod could potentially behave differently than if you were to restart.
-A good practice is to restore anything you've changed back to what it was in your mod class `Disable` method.
+Note that this code snippet is a workaround more than anything, and could break in certain situations. Restarting your mod like this is not the same as restarting the game, as it does not restart game state, so it will not be a clean slate and your mod could potentially behave differently than if you were to restart.
 
 ## How to make my mod do things when it's enabled?
 Override the `Enable` instance method, for example:
@@ -111,6 +110,8 @@ Cleanup functionality can go in the `Disable` instance method:
 `super.Disable()` calls the base class `Disable` method, which removes any hooks or network methods.
 
 Now when you disable your mod you should see "I sleep." in the console output. Replace that with whatever you want to do upon disable.
+
+A good practice is to restore anything you've changed back to what it was in the `Disable` method.
 
 For other functions you can override, check the `SDKMod` base class, defined in `ModMenu/ModObjects.py` in the Mods folder.
 
@@ -154,7 +155,7 @@ This `Boolean` should now appear in the options menu, under the name of your mod
 To handle changes to this value in real time, you can override the method `ModOptionChanged`. For example:
 
 ```python
-    def ModOptionChanged(self, option, new_value) -> None:
+    def ModOptionChanged(self, option: ModMenu.Options.Base, new_value) -> None:
         if option == self.MyBoolean:
             if new_value:
                 unrealsdk.Log("You turned on My Boolean")
@@ -164,9 +165,11 @@ To handle changes to this value in real time, you can override the method `ModOp
 
 Note that this function is called before the change to CurrentValue occurred, so we check `new_value` and not `self.MyBoolean.CurrentValue`.
 
-Also note that for backwards-compatibility reasons, upon enable of your mod this function will be called for every option that is not in a `Nested`.
+Also note that for backwards-compatibility reasons, upon enable of your mod this function will be called for every option that is not in a `Nested`. Do not rely on this functionality, as it may be removed in future. Logic addressing settings values on startup should be placed in the `Enable` method instead.
 
-## How to add keybinds?
+You can change the values of options programmatically, but make sure to call `ModMenu.SaveModSettings(mod: ModObjects.SDKMod)` afterwards (passing an instance of your mod, or `self` if called from within your mod class) or the new values will not be updated in the mod's `settings.json`.
+
+## How to add game keybinds?
 See `ModMenu/KeybindManager.py`.
 
 Instantiate your keybinds and add them to the `Keybinds` instance variable of your mod class.
@@ -189,10 +192,51 @@ Now "hi" will be outputted to the console whenever F3 is pressed while ingame.
 
 Any bindings can be customised by the user in Options > Keyboard / Mouse > Modded Key Bindings.
 
-You can also have bindings the mod performs when a key is pressed in the mods menu by modifiying `SettingsInput` instance variable of your mod class. This works a bit differently, just a dictionary mapping `key`: `action`, where both are `str`. Handle the different actions by overriding `SettingsInputPressed`. See the `SDKMod` base class in `ModMenu/ModObjects.py`.
+If the function you give `OnPress` takes an argument, it will be passed a `ModMenu.InputEvent` enum with the input event type, which can be `Pressed` (0), `Released` (1), `Repeat` (2), `DoubleClick` (3), or `Axis` (4). This allows you to perform different actions depending on the input type, which you can use, for instance, to do something while a button is held by watching for `Pressed` and `Released`.
+
+Alternatively, there is also the `ModMenu.SDKMod` method `GameInputPressed(self, bind: ModMenu.Keybind, event: ModMenu.InputEvent)` which you can override. It will be called when any key event is performed on one of the mod's `Keybinds`. Instead of passing an `OnPress` method when you define the `Keybind`, you can perform the associated action in this method instead.
+
+```python
+...
+class MyMod(ModMenu.SDKMod):
+    ...
+
+    HiBind = ModMenu.Keybind("Say hi", "F3")
+
+    Keybinds = [
+        HiBind,
+    ]
+
+    def GameInputPressed(self, bind: ModMenu.Keybind, event: ModMenu.InputEvent) -> None:
+        if bind == self.HiBind and event == ModMenu.InputEvent.Pressed:
+            unrealsdk.Log("hi")
+```
+
+## How to add mod manager keybinds?
+You can have bindings the mod performs when a key is pressed in the mods menu, just like the default `Enable` by pressing `Enter`, by modifying `SettingsInput` instance variable of your mod class. This is a dictionary mapping `key`: `action`, where both are `str`. Handle the different actions by overriding `SettingsInputPressed`. See the `SDKMod` base class in `ModMenu/ModObjects.py`.
+
+Here is an example:
+
+```python
+def sayHi() -> None:
+    unrealsdk.Log("hi")
+
+class MyMod(ModMenu.SDKMod):
+    ...
+    SettingsInputs = ModMenu.SDKMod.SettingsInputs.copy()
+    SettingsInputs["H"] = "Say hi"
+    
+    def SettingsInputPressed(self, action: str) -> None:
+        if action == "Say hi":
+            sayHi()
+        else:
+            super().SettingsInputPressed(action)
+```
+
+Now "hi" will be outputted to the console whenever H is pressed while the mod is selected in the mod manager.
 
 ## How to hook into game functions?
-You can use the `@Hook` decorator. PythonSDK will handle the registering and unregistering of hooks itself, so long as you remember to call the base class Enable/Disable if you override those methods.
+You can use the `@Hook` decorator. PythonSDK will handle the registering and removing of hooks itself, so long as you remember to call the base class Enable/Disable if you override those methods.
 
 The function you hook must have the signature:
 `([self,] caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct)`
@@ -203,17 +247,28 @@ Example:
 class MyMod(ModMenu.SDKMod):
     ...
     @ModMenu.Hook("WillowGame.WillowPlayerController.SpawningProcessComplete")
-    def onSpawn(self, caller, function, params):
+    def onSpawn(self, caller: unrealsdk.UObject, function: unrealsdk.UFunction, params: unrealsdk.FStruct) -> bool:
         unrealsdk.Log("onSpawn called")
         return True
 ```
 
-If you return True the function you hooked into will not continue executing as normal, which is sometimes desired, but if you do not want that remember to return True. If I forget return True in this case, I spawn in a weird place, don't have any money, eridium, or anything in my inventory, among other things, because we diverted the logic ordinarily handling all that.
+If you do not return True the function you hooked into will not continue executing as normal, which is sometimes desired, but if you do not want that remember to return True. If I forget return True in this case, I spawn in a weird place, don't have any money, eridium, or anything in my inventory, among other things, because we diverted the logic ordinarily handling all that.
+
+Alternatively, it is also possible to register hooks manually with `unrealsdk.RunHook(funcName: str, hookName: str, funcHook: object)`, where
+* `funcName`: a string of the game function to hook, 
+* `hookName`: a name it can be referenced by when you remove it, 
+* `funcHook`: the function you want to have called,
+
+*or* `unrealsdk.RegisterHook(..)` (same arguments), 
+
+and remove them with `unrealsdk.RemoveHook(funcName: str, hookName: str)`.
+
+It is preferrable to use `RunHook` over `RegisterHook`, since the former ensures the hook is not registered twice.
 
 ## How to know what game objects to modify?
-* Look through decompiled UPKs, as explained in [Writing SDK Mods]({{ site.baseurl }}{% link index.md %}#writing-sdk-mods) section
-* Look through objects in BLCMM Object Explorer, and other tools described in the [BLCMods Wiki](https://github.com/BLCM/BLCMods/wiki)
-* Look at the source of existing [PythonSDK Mods]({{ site.baseurl }}{% link mods.md %})
+* Look through decompiled UPKs, as explained in the [Writing SDK Mods]({{ site.baseurl }}{% link index.md %}#writing-sdk-mods) section.
+* Look through objects in BLCMM Object Explorer, and other tools described in the [BLCMods Wiki](https://github.com/BLCM/BLCMods/wiki). There is a guide [here](https://github.com/BLCM/BLCMods/wiki/Tutorial%3A-Getting-Started-Making-Mods#setting-up-blcmm) on how to get object data for Object Explorer, and basic usage.
+* Look at the source of existing [PythonSDK Mods]({{ site.baseurl }}{% link mods.md %}).
 * Even source of text mods can help, as they can tell you what objects you can modify.
 
 You can discuss what you're trying to do on the [Discord](https://discord.gg/VJXtHvh), and people will probably chime in to help you out!
