@@ -3,7 +3,7 @@ layout: mod
 
 authors: "plu5" # Authors of the mod
 title: Sprint Adjuster # Title of the mod
-version: "1.0.0" # Version of the mod
+version: "1.1.0 2021-05-17" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Change sprinting speed." # A short description of the mod itself.
@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/plu5/p-borderlands/issues"
-download: "https://github.com/plu5/p-borderlands/releases/tag/v1.0.0"
+download: "https://github.com/plu5/p-borderlands/releases/tag/v1.1.1"
 source: "https://github.com/plu5/p-borderlands/blob/main/SprintAdjuster" # Link to source code
 license: [] # License name, link about the license from https://choosealicense.com/
 
