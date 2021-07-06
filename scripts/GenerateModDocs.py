@@ -240,7 +240,7 @@ class Mod:
             NewFileName = self.ConvertStringToFile(self.Name) + ".md"
 
             print(f"\tWriting {self.Name} to _mods/{NewFileName}")
-            with open(f"../_mods/{NewFileName}", "w+") as outFile:
+            with open(f"../_mods/{NewFileName}", "w+", encoding="utf8") as outFile:
                 outFile.write(NewText)
         except Exception as ex:
             if self.bSoftExceptions:
@@ -248,6 +248,23 @@ class Mod:
                 return None
             else:
                 raise ex
+
+    def ConvertToJson(self):
+        return {
+            "name": self.Name,
+            "authors": self.Authors,
+            "description": self.Description,
+            "tagline": self.Tagline,
+            "types": self.Types,
+            "supports": self.Supports,
+            "issues": self.IssuesLink,
+            "source": self.SourceCode,
+            "latest": self.LatestVersion,
+            "versions": self.Versions,
+            "requirements": self.Requirements,
+            "license": self.License,
+            "date": self.Date
+        }
 
 
 def RequestJSONFromPage(url, bSoftExceptions):
@@ -309,6 +326,15 @@ def GenerateModDocs(bSoftExceptions=True):
     for file in os.listdir("../_mods"):
         if file not in allModFileNames:
             os.remove(os.path.join("../_mods", file))
+
+    with open("../mods.json", "w+", encoding="utf8") as file:
+        json.dump([
+            {
+                **mod.ConvertToJson(),
+                "url": "/mods/" + mod.ConvertStringToFile(mod.Name)
+            }
+            for mod in allMods
+        ], file, separators=(',', ':'))
 
 
 if len(sys.argv) > 1 and sys.argv[1] == "--hard":
