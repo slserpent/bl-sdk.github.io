@@ -125,7 +125,7 @@ Then you can make a [Pull Request](https://github.com/bl-sdk/bl-sdk.github.io/pu
 ### Missing Requirements Notifications
 If a user doesn't install all the requirements your mod needs, it probably can't load. Rather than just having your mod fail to load with no proper indication, this database provides a page you can open to explain what's missing.
 
-[https://bl-sdk.github.io/requirements/](https://bl-sdk.github.io/requirements/)
+[https://bl-sdk.github.io/requirements/](requirements)
 
 As you can see, this page doesn't work out of the box, you need to use query parameters to fill in some information.
 
