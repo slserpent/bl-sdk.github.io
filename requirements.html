@@ -29,11 +29,12 @@ layout: main
     });
 
     const modData = await modDataPromise;
+    const mod = modData.find(x => x.name == modName);
 
-    // Add requirements from mod data if needed
-    if (foundAll) {
-      const mod = modData.find(x => x.name == modName);
-      if (mod) {
+    if (mod) {
+      document.getElementsByName("mod").forEach(m => m.href = mod.url);
+
+      if (foundAll) {
         for (const reqName in mod.requirements) {
           requirements[reqName] = mod.requirements[reqName];
         }
@@ -81,30 +82,22 @@ layout: main
     color: red;
     font-size: 0.9em;
   }
-
-  img {
-    border: 3px ridge black;
-    display: block;
-    margin: 1em auto 0 auto;
-  }
 </style>
 <div class="container">
   <h1 id="title">Missing Requirements</h1>
   <p id="missing">
-    <strong name="mod">Unknown Mod Name</strong> has requirements you must also install in order for it to load.
+    <a name="mod" href="/404.html">Unknown Mod Name</a> has requirements you must also install in order for it to load.
   </p>
   <p id="outdated" hidden>
-    Some of the requirements for <strong name="mod">Unknown Mod Name</strong> are outdated, you will have to update them in order for it to load.
+    Some of the requirements for <a name="mod" href="/404.html">Unknown Mod Name</a> are outdated, you will have to update them in order for it to load.
   </p>
   <ul id="modList">
     <li id="notice">Something went wrong, there should be mods listed here.</li>
     <template id="modTemplate">
-      <li><a href="/404.html">Unknown Mod name</a><sup><a href="/404.html">(Direct Download)</a></sup></li>
+      <li><a href="/404.html">Unknown Mod name</a> <sup><a href="/404.html">(Direct Download)</a></sup></li>
     </template>
   </ul>
   <p>
     Requirements will always be listed on the mod page.
-    <br>
-    <img alt="Requirements section on mod page" src="/assets/images/posts/requirements.png">
   </p>
 </div>

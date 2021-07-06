@@ -331,7 +331,7 @@ def GenerateModDocs(bSoftExceptions=True):
         json.dump([
             {
                 **mod.ConvertToJson(),
-                "url": "https://bl-sdk.github.io/mods/" + mod.ConvertStringToFile(mod.Name)
+                "url": "/mods/" + mod.ConvertStringToFile(mod.Name)
             }
             for mod in allMods
         ], file, separators=(',', ':'))
