@@ -1,0 +1,108 @@
+---
+layout: main
+---
+<script>
+  const modDataPromise = fetch("/mods.json").then(resp => resp.json());
+
+  window.addEventListener("load", async function() {
+    let modName = undefined;
+    let foundUpdate = false;
+    let foundAll = false;
+    let requirements = {};
+
+    new URLSearchParams(window.location.search).forEach(function(val, key) {
+      // Only grab the first `mod`, `update`, and `all` keys, treat everything else as a requirement
+      if (modName == undefined && (key == "m" || key == "mod")) {
+        modName = decodeURI(val);
+        document.getElementsByName("mod").forEach(m => m.textContent = modName);
+      } else if (!foundUpdate && (key == "u" || key == "update")) {
+        foundUpdate = true;
+        document.getElementById("missing").hidden = true;
+        document.getElementById("outdated").hidden = false;
+        document.getElementById("title").innerText = "Outdated Requirements";
+      } else if (!foundAll && (key == "a" || key == "all")) {
+        foundAll = true;
+      } else {
+        requirements[key] = decodeURI(val);
+      }
+    });
+
+    const modData = await modDataPromise;
+    const mod = modData.find(x => x.name == modName);
+
+    if (mod) {
+      document.getElementsByName("mod").forEach(m => m.href = mod.url);
+
+      if (foundAll) {
+        for (const reqName in mod.requirements) {
+          requirements[reqName] = mod.requirements[reqName];
+        }
+      }
+    }
+
+    const list = document.getElementById("modList");
+    const notice = document.getElementById("notice");
+    const template = document.getElementById("modTemplate");
+    for (const reqName in requirements) {
+      notice.hidden = true;
+
+      const modElement = template.content.cloneNode(true);
+      const mainLink = modElement.children[0].children[0];
+      const directLink = modElement.children[0].children[1].children[0];
+
+      mainLink.innerText = reqName;
+
+      const version = requirements[reqName];
+      if (version) {
+        // Add a space between the equality symbol and version if applicable
+        var match = version.match(/^([<>=]=)([^ ].+)$/);
+        if (match) {
+          mainLink.innerText += " " + match[1] + " " + match[2];
+        } else {
+          mainLink.innerText += " " + version;
+        }
+      }
+
+      // If we can find the mod, add links
+      const reqData = modData.find(x => x.name == reqName);
+      if (reqData) {
+        mainLink.href = reqData.url;
+        directLink.href = reqData.versions[reqData.latest];
+      } else {
+        directLink.hidden = true;
+      }
+
+      list.appendChild(modElement);
+    }
+  });
+</script>
+
+<style>
+  #notice {
+    color: red;
+    font-size: 0.9em;
+  }
+  #title {
+    text-align: center;
+  }
+  .container {
+    font-size: 16px;
+  }
+</style>
+
+<div class="container">
+  <h1 id="title">Missing Requirements</h1>
+  <p id="missing">
+    <a name="mod" href="/404.html">Unknown Mod Name</a> has requirements you must also install in order for it to load.
+  </p>
+  <p id="outdated" hidden>
+    Some of the requirements for <a name="mod" href="/404.html">Unknown Mod Name</a> are outdated, you will have to update them in order for it to load.
+  </p>
+  <ul id="modList">
+    <li id="notice">Something went wrong, there should be mods listed here.</li>
+    <template id="modTemplate">
+      <li><a href="/404.html">Unknown Mod name</a> <sup><a href="/404.html">(Direct Download)</a></sup></li>
+    </template>
+  </ul>
+  <p>In the future, requirements will always be listed on the mod page.</p>
+</div>
