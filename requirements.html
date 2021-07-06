@@ -1,7 +1,6 @@
 ---
 layout: main
 ---
-
 <script>
   const modDataPromise = fetch("/mods.json").then(resp => resp.json());
 
@@ -77,12 +76,20 @@ layout: main
     }
   });
 </script>
+
 <style>
   #notice {
     color: red;
     font-size: 0.9em;
   }
+  #title {
+    text-align: center;
+  }
+  .container {
+    font-size: 16px;
+  }
 </style>
+
 <div class="container">
   <h1 id="title">Missing Requirements</h1>
   <p id="missing">
@@ -97,7 +104,5 @@ layout: main
       <li><a href="/404.html">Unknown Mod name</a> <sup><a href="/404.html">(Direct Download)</a></sup></li>
     </template>
   </ul>
-  <p>
-    Requirements will always be listed on the mod page.
-  </p>
+  <p>In the future, requirements will always be listed on the mod page.</p>
 </div>

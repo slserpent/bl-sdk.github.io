@@ -129,22 +129,24 @@ If a user doesn't install all the requirements your mod needs, it probably can't
 
 As you can see, this page doesn't work out of the box, you need to use query parameters to fill in some information.
 
-Field         | Usage
-:-------------|:------
-`m`/`mod`     | Holds the name of your mod.
-`u`/`update`  | If it exists, changes the page to talk about outdated requirements rather than missing ones.
-`a`/`all`     | If it exists, also pulls in all requirements defined in your mod info file.
-Anything Else | The name of a requirement mod to list, optionally holding the required version.
+| Field         | Usage                                                                                        |
+|:--------------|:---------------------------------------------------------------------------------------------|
+| `m`/`mod`     | Holds the name of your mod.                                                                  |
+| `u`/`update`  | If it exists, changes the page to talk about outdated requirements rather than missing ones. |
+| `a`/`all`     | If it exists, also pulls in all requirements defined in your mod info file.                  |
+| Anything Else | The name of a requirement mod to list, optionally holding the required version.              |
 
 Only the first instance of the predefined fields are used, so if you really need to define a requirement called `update` you can simply add it as a parameter twice.
 
 Once you have your url, to open the page you can use the `webbrowser` module.
 ```py
 try:
-    from Mods import AsyncUtil
+  from Mods import AsyncUtil
 except ImportError as ex:
-    import webbrowser
-    webbrowser.open("https://bl-sdk.github.io/requirements/?mod=Alt%20Use%20Vendors&AsyncUtil")
-    raise ex
+  import webbrowser
+  webbrowser.open("https://bl-sdk.github.io/requirements/?mod=Alt%20Use%20Vendors&AsyncUtil")
+  raise ex
 ```
 You can add more complex logic to build up the url based on exactly which mods are installed and what their versions are.
+If you want to pass in the version (i.e. `Mod >= 3.1`), you do it like so: `UserFeedback=>=3.1` or `UserFeedback===3.1`.
+The requirements page will pull the latest version of the requirements.
