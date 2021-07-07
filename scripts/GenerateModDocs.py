@@ -8,6 +8,9 @@ import datetime
 import bleach
 import traceback
 
+from typing import List
+from typing import Dict
+
 
 class Mod:
     ValidLicenses = {
@@ -66,20 +69,20 @@ class Mod:
     }
 
     Name = ""  # Name of the given mod
-    Authors = []  # Authors of the given mod
+    Authors: List[str] = []  # Authors of the given mod
     Tagline = ""  # Short-form description of the given mod
     Description = ""  # A longer explanation, can be equal to Tagline
-    Types = []  # What the mod's types are in the mod manager
+    Types: List[str] = []  # What the mod's types are in the mod manager
 
     IssuesLink = ""  # A link to the mod's issue page or a discord tag or nothing, optional
     SourceCode = ""  # Link to the mod's source code, optional
 
     LatestVersion = ""  # The latest version number for the given mod
-    Versions = {}  # All available versions of this mod
-    Requirements = {}  # All pre-requisites for this mod
+    Versions: Dict[str, str] = {}  # All available versions of this mod
+    Requirements: Dict[str, str] = {}  # All pre-requisites for this mod
 
-    Supports = []  # A list representing the games that this mod currently supports
-    License = []  # An optional list of what license the mod is currently licensed as.
+    Supports: List[str] = []  # A list representing the games that this mod currently supports
+    License: List[str] = []  # An optional list of what license the mod is currently licensed as.
 
     Date = datetime.datetime.now().isoformat()  # The current time in ISO-8601 format, used for "Last Updated"
 
@@ -263,7 +266,6 @@ class Mod:
             "versions": self.Versions,
             "requirements": self.Requirements,
             "license": self.License,
-            "date": self.Date
         }
 
 
@@ -321,20 +323,17 @@ def GenerateModDocs(bSoftExceptions=True):
             allMods += [modObject]
 
     # Support deleting files
-
     allModFileNames = [modData.ConvertStringToFile(modData.Name) + ".md" for modData in allMods]
     for file in os.listdir("../_mods"):
         if file not in allModFileNames:
             os.remove(os.path.join("../_mods", file))
 
     with open("../mods.json", "w+", encoding="utf8") as file:
-        json.dump([
-            {
-                **mod.ConvertToJson(),
-                "url": "/mods/" + mod.ConvertStringToFile(mod.Name)
-            }
-            for mod in allMods
-        ], file, separators=(',', ':'))
+        json.dump(
+            [{**mod.ConvertToJson(), "url": "/mods/" + mod.ConvertStringToFile(mod.Name)} for mod in allMods],
+            file,
+            separators=(",", ":"),
+        )
 
 
 if len(sys.argv) > 1 and sys.argv[1] == "--hard":
