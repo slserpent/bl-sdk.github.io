@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Adds several small features useful when playing offline." # A short description of the mod itself.
 description: "Adds several small features useful when playing offline." # This is set in order to keep the SEO proper
-longDescription: "Adds several small features useful when playing offline.\n- Fixes a crash when trying to chat while not connected to SHiFT.\n- Adds an option to force your game to never connect to SHiFT.\n- Adds an option to automatically hide the offline warning.\n\nNote that this will cause issues when running offline mod files - you need to manually open your mod file in a text editor, search for `GearboxAccountData_1` and change the `1` to a `0`. You will need to do this every time you re-save the file in BLCMM." # Description of what the mod can do
+longDescription: "Adds several small features useful when playing offline.\n- Fixes a crash when trying to chat while not connected to SHiFT.\n- Adds an option to force your game to never connect to SHiFT.\n- Adds an option to automatically hide the offline warning.\n\nNote that using 'Force Offline Mode' will cause issues when running offline mod files - you need to manually open your mod file in a text editor, search for `GearboxAccountData_1` and change the `1` to a `0`. You will need to do this every time you re-save the file in BLCMM." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
