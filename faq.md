@@ -94,10 +94,10 @@ Override the `Enable` instance method, for example:
 class MyMod(ModMenu.SDKMod):
     ...
     def Enable(self) -> None:
-        super.Enable()
+        super().Enable()
         unrealsdk.Log("I ARISE!")
 ```
-`super.Enable()` calls the base class `Enable` method, which registers any hooks or network methods, so you should call that first.
+`super().Enable()` calls the base class `Enable` method, which registers any hooks or network methods, so you should call that first.
 
 `Log` will log a message to the console. Now when you launch the game and enable your mod you should see "I ARISE!" in the console output. Replace that with whatever you want to do upon enable.
 
@@ -105,9 +105,9 @@ Cleanup functionality can go in the `Disable` instance method:
 ```python
     def Disable(self) -> None:
         unrealsdk.Log("I sleep.")
-        super.Disable()
+        super().Disable()
 ```
-`super.Disable()` calls the base class `Disable` method, which removes any hooks or network methods.
+`super().Disable()` calls the base class `Disable` method, which removes any hooks or network methods.
 
 Now when you disable your mod you should see "I sleep." in the console output. Replace that with whatever you want to do upon disable.
 
