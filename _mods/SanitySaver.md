@@ -3,7 +3,7 @@ layout: mod
 
 authors: "apple1417" # Authors of the mod
 title: Sanity Saver # Title of the mod
-version: "2.0" # Version of the mod
+version: "2.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Disables sanity check, and also saves items which don't serialize, which would have parts deleted even with it off" # A short description of the mod itself.
