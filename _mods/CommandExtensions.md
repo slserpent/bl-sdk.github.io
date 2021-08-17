@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Adds a few new console commands, which are fully compatible with blcmm files." # A short description of the mod itself.
 description: "Adds a few new console commands, which are fully compatible with blcmm files." # This is set in order to keep the SEO proper
-longDescription: "Adds a few new console commands, and provides functionality for other mods to do the\nsame. All these commands are fully compatible with blcmm files, you can just put them\nin your mod and have users merge it with other files and enable/disable various\ncategories and it all just keeps working fine.\n\n[See here for info on the builtin commands and how to write mods using them.](https://github.com/apple1417/bl-sdk-mods/blob/master/CommandExtensions/Writing-Mods.md)" # Description of what the mod can do
+longDescription: "Adds a few new console commands, and provides functionality for other mods to do the same. All these commands are fully compatible with blcmm files, you can just put them in your mod and have users merge it with other files and enable/disable various categories and it all just keeps working fine.\n\n[See here for info on the builtin commands and how to write mods using them.](https://github.com/apple1417/bl-sdk-mods/blob/master/CommandExtensions/Writing-Mods.md)" # Description of what the mod can do
 categories: ['Library'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
