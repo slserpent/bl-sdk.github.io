@@ -3,12 +3,12 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: MapLoader # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Load and play with custom Maps!" # A short description of the mod itself.
 description: "Load and play with custom Maps!" # This is set in order to keep the SEO proper
-longDescription: "Allows the use of custom map files created by the MapEditor.\n To add/remove a custom map simply place/remove the .json map file into/from the  directory.\nEach map file has its own Options/Mods entry that you can either enable or disable." # Description of what the mod can do
+longDescription: "Allows the use of custom map files created by the MapEditor.\n To add/remove a custom map simply place/remove the .json map file into/from the  directory.\nEach map file has its own Options/Mods entry that you can either enable or disable.\nBecause loading in and creating hundreds of new objects takes time, this mod will increase your Loading screen times.\nIf you absolutely can't live with ~4 additional seconds of Loading, check out the Options&gt;Mod Menu.\nThis mod comes with an optional ``Threaded Loading`` option. Enabling this option will remove any additional loading screen time,instead the custom map changes will load in over time." # Description of what the mod can do
 categories: ['Utility', 'Content'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
