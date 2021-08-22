@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: FirstPersonDriver # Title of the mod
-version: "1.0" # Version of the mod
+version: "2.0" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Switch between 1st/3rd person while driving." # A short description of the mod itself.
@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://github.com/juso40/bl2sdk_Mods/tree/master/FirstPersonDriver"
+download: "https://github.com/juso40/bl2sdk_Mods/raw/master/FirstPersonDriver/FirstPersonDriver.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 

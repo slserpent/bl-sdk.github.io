@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: DropChanceMultiplier # Title of the mod
-version: "1.0" # Version of the mod
+version: "2.0" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Increase the amount of loot enemies drop." # A short description of the mod itself.
