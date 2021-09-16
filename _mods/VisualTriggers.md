@@ -6,17 +6,9 @@ title: Visual Triggers # Title of the mod
 version: "1.0" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Provides keybinds for outlining waypoints and triggers with skeleton debug cylinders.
-By default '8' will toggle waypoints and '9' will toggle triggers. 
-Once enabled, you can change the keybinds for showing triggers and waypoints in the keybinds menu. 
-There is also an option in the mod menu: 
-* The number of lines slider allows you to set the number of line segments you want the debug cylinders to draw with from 6 to 50." # A short description of the mod itself.
-description: "Provides keybinds for outlining waypoints and triggers with skeleton debug cylinders.
-By default '8' will toggle waypoints and '9' will toggle triggers. 
-Once enabled, you can change the keybinds for showing triggers and waypoints in the keybinds menu. 
-There is also an option in the mod menu: 
-* The number of lines slider allows you to set the number of line segments you want the debug cylinders to draw with from 6 to 50." # This is set in order to keep the SEO proper
-longDescription: "Provides keybinds for outlining waypoints and triggers with skeleton debug cylinders.\nBy default '8' will toggle waypoints and '9' will toggle triggers. \nOnce enabled, you can change the keybinds for showing triggers and waypoints in the keybinds menu. \nThere is also an option in the mod menu: \n* The number of lines slider allows you to set the number of line segments you want the debug cylinders to draw with from 6 to 50." # Description of what the mod can do
+tagline: "Toggle visual outlines for the hitboxes of triggers and waypoints with the press of a key!" # A short description of the mod itself.
+description: "Toggle visual outlines for the hitboxes of triggers and waypoints with the press of a key!" # This is set in order to keep the SEO proper
+longDescription: "Provides keybinds for outlining waypoints and triggers with skeleton debug cylinders.\nBy default '8' will toggle waypoints and '9' will toggle triggers. \nOnce enabled, you can change the keybinds for showing triggers and waypoints in the keybinds menu. \nThere is also an option in the mod menu: \n* The number of lines slider allows you to set the number of line segments you want the debug cylinders to draw with from 6 to 50. \n* Note that the more lines, the more accurate the outline will be to the true hitbox so higher settings is recommended." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
