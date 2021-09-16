@@ -8,7 +8,7 @@ supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + 
 
 tagline: "Toggle visual outlines for the hitboxes of triggers and waypoints with the press of a key!" # A short description of the mod itself.
 description: "Toggle visual outlines for the hitboxes of triggers and waypoints with the press of a key!" # This is set in order to keep the SEO proper
-longDescription: "Provides keybinds for outlining waypoints and triggers with skeleton debug cylinders.\nBy default '8' will toggle waypoints and '9' will toggle triggers. \nOnce enabled, you can change the keybinds for showing triggers and waypoints in the keybinds menu. \nThere is also an option in the mod menu: \n* The number of lines slider allows you to set the number of line segments you want the debug cylinders to draw with from 6 to 50. \n* Note that the more lines, the more accurate the outline will be to the true hitbox so higher settings is recommended." # Description of what the mod can do
+longDescription: "Provides keybinds for outlining waypoints and triggers with skeleton debug cylinders.\n![Visual Triggers](https://github.com/GameChanger97/Bl2-Mods/blob/main/Borderlands%202%20(32-bit,%20DX9)%209_15_2021%204_17_58%20PM%20(2).png?raw=true) \nBy default '8' will toggle waypoints and '9' will toggle triggers. \nOnce enabled, you can change the keybinds for showing triggers and waypoints in the keybinds menu. \n \nThere is also an option in the mod menu: \n* The number of lines slider allows you to set the number of line segments you want the debug cylinders to draw with from 6 to 50. \n* Note that the more lines, the more accurate the outline will be to the true hitbox so higher settings is recommended." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
@@ -16,7 +16,7 @@ requirementTitles: [] # The link-friendly name of the requirements
 
 issues: ""
 download: "https://github.com/GameChanger97/Bl2-Mods/blob/main/VisualTriggers/VisualTriggers.zip?raw=true"
-source: "" # Link to source code
+source: "https://github.com/GameChanger97/Bl2-Mods" # Link to source code
 license: [] # License name, link about the license from https://choosealicense.com/
 
 ---
