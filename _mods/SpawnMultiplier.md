@@ -4,7 +4,7 @@ layout: mod
 authors: "apple1417" # Authors of the mod
 title: Spawn Multiplier # Title of the mod
 version: "1.5" # Version of the mod
-supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds an option to let you easily multiply the amount of spawns you're getting." # A short description of the mod itself.
 description: "Adds an option to let you easily multiply the amount of spawns you're getting." # This is set in order to keep the SEO proper

@@ -13,6 +13,7 @@ This opens up many new avenues for modding, from simply allowing modifying dynam
 Currently it supports:
 - Borderlands 2
 - Borderlands: The Pre-Sequel
+- Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure
 <p></p>
 
 ## SDK Installation
@@ -28,7 +29,7 @@ But if you're more of a text guide style person:
 ![PythonSDK.zip Contents](/assets/images/posts/installation2.png)
 3. Locate your game's files. In Steam, this can be done by right-clicking on the game in your library, selecting "Properties," then in the "Local Files" section, clicking "Browse":
 ![Steam Contextual Menu](/assets/images/posts/installation3.png) ![Steam Local Files Properties](/assets/images/posts/installation4.png)
-4. In the game's files, navigate to the `Binaries`, then the `Win32` folder. This folder should contain the `.exe` for your game (i.e. `Borderlands2.exe` or `BorderlandsPreSequel.exe`).
+4. In the game's files, navigate to the `Binaries`, then the `Win32` folder. This folder should contain the `.exe` for your game (i.e. `Borderlands2.exe`, `BorderlandsPreSequel.exe`, or `TinyTina.exe`).
 5. Copy the 4 items from `PythonSDK.zip` **exactly as they** are to the `Win32` folder. Note that `pythonXX.zip` should *not* be un-zipped:
 ![Win32 Folder Contents](/assets/images/posts/installation5.png)
 6. If you had previously installed an older version of the SDK, delete any old files that weren't overwritten by the ones in the latest `PythonSDK.zip`.
@@ -86,7 +87,7 @@ In order to add your mods to this database, you need to create a JSON file and h
       "description": "[Description, can include HTML/Markdown]",
       "tagline": "[Optional: A short description of the mod, if not available will pull from `description`]",
       "types": ["[Mod Types]"],
-      "supports": ["[Supported Games ie `[\"BL2\", \"TPS\"]`]"],
+      "supports": ["[Supported Games ie `[\"BL2\", \"TPS\", \"AoDK\"]`]"],
       "issues": "[Optional] A link to your issues report page",
       "source": "[Optional] Link to the source code",
       "latest": "[LATEST VERSION]",

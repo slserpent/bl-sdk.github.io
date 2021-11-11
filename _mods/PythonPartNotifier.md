@@ -4,7 +4,7 @@ layout: mod
 authors: "apple1417" # Authors of the mod
 title: Python Part Notifier # Title of the mod
 version: "1.7" # Version of the mod
-supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Shows the parts making up all of your items and weapons on their cards." # A short description of the mod itself.
 description: "Shows the parts making up all of your items and weapons on their cards." # This is set in order to keep the SEO proper

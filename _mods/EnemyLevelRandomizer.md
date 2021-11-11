@@ -4,7 +4,7 @@ layout: mod
 authors: "apple1417" # Authors of the mod
 title: Enemy Level Randomizer # Title of the mod
 version: "1.4" # Version of the mod
-supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "As the name might suggest, randomizes enemy levels. Probably a bad idea." # A short description of the mod itself.
 description: "As the name might suggest, randomizes enemy levels. Probably a bad idea." # This is set in order to keep the SEO proper
