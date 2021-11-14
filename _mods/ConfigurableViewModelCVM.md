@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: ConfigurableViewModel (CVM) # Title of the mod
-version: "2.0" # Version of the mod
+version: "2.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Allows you to easily change the ViewModel for each WeaponType with ingame sliders." # A short description of the mod itself.
