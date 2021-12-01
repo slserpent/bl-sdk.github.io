@@ -8,7 +8,7 @@ supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "
 
 tagline: "Visualizes invisible blocking/killing collision volumes and allows hiding meshes with no collision." # A short description of the mod itself.
 description: "Visualizes invisible blocking/killing collision volumes and allows hiding meshes with no collision." # This is set in order to keep the SEO proper
-longDescription: "Visualizes invisible blocking/killing collision volumes and allows hiding meshes with no collision." # Description of what the mod can do
+longDescription: "Visualizes invisible blocking/killing collision volumes and allows hiding meshes with no collision.\n\nBe aware that the game may hang for several seconds when enabling visualization in a map with many invisible volumes. Additionally, while kill volumes and blocking volumes can be toggled on independently, both of them will always be toggled off together." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
