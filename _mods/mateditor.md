@@ -1,23 +1,23 @@
 ---
 layout: mod
 
-authors: "apple1417" # Authors of the mod
-title: Borderlands Crowd Control # Title of the mod
-version: "1.3" # Version of the mod
-supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+authors: "juso" # Authors of the mod
+title: mateditor # Title of the mod
+version: "1.0.0" # Version of the mod
+supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Lets viewers on Twitch spend channel points to affect your game." # A short description of the mod itself.
-description: "Lets viewers on Twitch spend channel points to affect your game." # This is set in order to keep the SEO proper
-longDescription: "Lets viewers on Twitch spend channel points to affect your game.\n\nInstallation is more involved than other mods, please refer to the [readme](https://github.com/apple1417/bl-sdk-mods/blob/master/CrowdControl/Readme.md).\nThese instructions are included in the download, and are thus not duplicated here to prevent two copies getting out of sync.\n\nA list of the default effects is available [here](https://github.com/apple1417/bl-sdk-mods/blob/master/CrowdControl/Effects.md)." # Description of what the mod can do
-categories: ['Gameplay', 'Utility'] # Category of the type of mod
+tagline: "Edit Materials in realtime." # A short description of the mod itself.
+description: "Edit Materials in realtime." # This is set in order to keep the SEO proper
+longDescription: "This SDK mod is a Tool for modders. It allows the user to easily change any `MaterialInstanceConstant` in realtime.\nYou can filter all Materials and Textures using a search field.\nTo change the colors you have the choice between using a slider, inputting your own values (by CNRTL+Leftclick) or using a color wheel.All changes can easily be exported to a `.blcm` file to use as a standalone mod or for a modpack." # Description of what the mod can do
+categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
-issues: ""
-download: "https://github.com/apple1417/bl-sdk-mods/blob/master/CrowdControl/Readme.md"
-source: "https://github.com/apple1417/bl-sdk-mods/" # Link to source code
-license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
+issues: "https://github.com/juso40/bl2sdk_Mods/issues"
+download: "https://github.com/juso40/bl2sdk_Mods/raw/master/mateditor/mateditor.zip"
+source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
+license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
 ---
 **Contents**
