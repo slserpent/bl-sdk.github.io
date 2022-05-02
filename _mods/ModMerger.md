@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://raw.githubusercontent.com/juso40/bl2sdk_Mods/master/ModMerger/__init__.py"
+download: "https://raw.githubusercontent.com/juso40/bl2sdk_Mods/master/ModMerger/ModMerger.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
