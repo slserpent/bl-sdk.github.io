@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: ScaledTVHM # Title of the mod
-version: "2.0" # Version of the mod
+version: "1.0" # Version of the mod
 supported: "AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds scaling to TVHM for TTAoDK One Shot Adventure." # A short description of the mod itself.

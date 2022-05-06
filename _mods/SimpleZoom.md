@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: SimpleZoom # Title of the mod
-version: "2.0" # Version of the mod
+version: "1.0.0" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds a keybind that allows you to zoom." # A short description of the mod itself.
