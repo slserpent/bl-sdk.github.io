@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: Better Spawns and Better Travel (BSABT) # Title of the mod
-version: "1.1.0" # Version of the mod
+version: "1.2.0" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Spawning and traveling like in BL3." # A short description of the mod itself.
