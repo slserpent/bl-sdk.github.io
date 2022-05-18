@@ -3,12 +3,12 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: LootMarker # Title of the mod
-version: "1.1" # Version of the mod
+version: "1.2" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Map markers for legendary loot." # A short description of the mod itself.
 description: "Map markers for legendary loot." # This is set in order to keep the SEO proper
-longDescription: "Places a marker on the map and minimap for every legendary or better.\nCurrently supports Exodus and UPC/Vanilla for both, TPS and BL2." # Description of what the mod can do
+longDescription: "Places a marker on the map and minimap for every legendary or better.\nCurrently supports Exodus and UPC/Vanilla for both, TPS and BL2.\nYou can change the marker type, optionally enable a sound (and choose out of a predefined list) to be played when a legendary got dropped." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
