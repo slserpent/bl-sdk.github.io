@@ -2,20 +2,20 @@
 layout: mod
 
 authors: "juso" # Authors of the mod
-title: LootMarker # Title of the mod
-version: "1.3" # Version of the mod
+title: NPCRevives # Title of the mod
+version: "1.0" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Map markers for legendary loot." # A short description of the mod itself.
-description: "Map markers for legendary loot." # This is set in order to keep the SEO proper
-longDescription: "Places a marker on the map and minimap for every legendary or better.\nCurrently supports Exodus and UPC/Vanilla for both, TPS and BL2.\nYou can change the marker type, optionally enable a sound (and choose out of a predefined list) to be played when a legendary got dropped." # Description of what the mod can do
+tagline: "Friendly NPCs attempt to revive you." # A short description of the mod itself.
+description: "Friendly NPCs attempt to revive you." # This is set in order to keep the SEO proper
+longDescription: "Friendly NPCs will attempt to revive you." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://github.com/juso40/bl2sdk_Mods/raw/master/LootMarker/LootMarker.zip"
+download: "https://raw.githubusercontent.com/juso40/bl2sdk_Mods/master/NPCRevives/NPCRevives.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
