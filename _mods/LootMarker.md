@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: LootMarker # Title of the mod
-version: "1.3" # Version of the mod
+version: "1.4" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Map markers for legendary loot." # A short description of the mod itself.
