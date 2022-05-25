@@ -2,20 +2,20 @@
 layout: mod
 
 authors: "juso" # Authors of the mod
-title: Be Gone Out Of Bounds Loot # Title of the mod
-version: "2.0" # Version of the mod
-supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+title: RogueLands # Title of the mod
+version: "1.0" # Version of the mod
+supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Teleport all loot in front of you, with the simple press of a button!" # A short description of the mod itself.
-description: "Teleport all loot in front of you, with the simple press of a button!" # This is set in order to keep the SEO proper
-longDescription: "Gone are the times of missing loot because it fell out of the reachable area.\nThis mod adds a configurable keybind, that will allow you to teleport\nall loot on the ground directly in front of you.\n Default Key: ``Enter``" # Description of what the mod can do
-categories: ['Utility'] # Category of the type of mod
+tagline: "Turns BL2 into Rogue-Light game." # A short description of the mod itself.
+description: "Turns BL2 into Rogue-Light game." # This is set in order to keep the SEO proper
+longDescription: "RogueLands is a mod that turns Borderlands into a Rogue-Lite game. \nThis mod works similar to the 1life challenge, but with the twist, that when you die, you respawn at the start of the game with all your Exp. \nYou will loose all your items, but you will keep your stats and skills. \nAll progress with this mod will count towards the UVHM. You do not need to have it unlocked to play. \nOverpower Levels will also be ignored, it is recommended to create a new character for this mod!\n" # Description of what the mod can do
+categories: ['Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://github.com/juso40/bl2sdk_Mods/raw/master/BeGoneOutOfBoundsLoot/BeGoneOutOfBoundsLoot.zip"
+download: "https://github.com/juso40/bl2sdk_Mods/raw/master/RogueLands/RogueLands.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
