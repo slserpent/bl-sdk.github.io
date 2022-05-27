@@ -2,20 +2,20 @@
 layout: mod
 
 authors: "PyrexBLJ" # Authors of the mod
-title: SniperButton # Title of the mod
-version: "1.0.2" # Version of the mod
+title: Respec HotKey (RHK) # Title of the mod
+version: "1.0.0" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Automatically modifies ADS speed" # A short description of the mod itself.
-description: "Automatically modifies ADS speed" # This is set in order to keep the SEO proper
-longDescription: "Automatically modifies ADS speed" # Description of what the mod can do
+tagline: "Respec skills from anywhere with a hotkey, still costs cash" # A short description of the mod itself.
+description: "Respec skills from anywhere with a hotkey, still costs cash" # This is set in order to keep the SEO proper
+longDescription: "Respec skills from anywhere with a hotkey, still costs cash" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/SniperButton/SniperButton.rar"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RHK/RHK.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
