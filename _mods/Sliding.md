@@ -3,12 +3,12 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: Sliding # Title of the mod
-version: "2.0" # Version of the mod
+version: "2.1" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds Sliding to BL2." # A short description of the mod itself.
 description: "Adds Sliding to BL2." # This is set in order to keep the SEO proper
-longDescription: "Slide!\nKinda buggy, for whatever reason it removes all status effects from you when sliding.\n![yt](https://www.youtube.com/watch?v=u0Ao8SGIbVU&amp;t)" # Description of what the mod can do
+longDescription: "Slide!\nSliding speed gets calculated from slope and slide duration. You slide faster and longer if you slide downhill.\n![yt](https://www.youtube.com/watch?v=u0Ao8SGIbVU&amp;t)" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
