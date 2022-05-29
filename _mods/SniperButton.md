@@ -3,7 +3,7 @@ layout: mod
 
 authors: "PyrexBLJ" # Authors of the mod
 title: SniperButton # Title of the mod
-version: "1.0.2" # Version of the mod
+version: "1.0.3" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Automatically modifies ADS speed" # A short description of the mod itself.
