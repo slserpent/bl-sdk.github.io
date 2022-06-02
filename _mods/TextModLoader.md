@@ -3,7 +3,7 @@ layout: mod
 
 authors: "apple1417" # Authors of the mod
 title: Text Mod Loader # Title of the mod
-version: "1.1" # Version of the mod
+version: "1.2" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Displays Text Mods from binaries in the SDK mods menu." # A short description of the mod itself.
