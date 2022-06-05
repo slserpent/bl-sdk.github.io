@@ -3,7 +3,7 @@ layout: mod
 
 authors: "apple1417" # Authors of the mod
 title: Command Extensions # Title of the mod
-version: "1.8" # Version of the mod
+version: "1.9" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds a few new console commands, which are fully compatible with blcmm files." # A short description of the mod itself.
