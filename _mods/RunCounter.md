@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RunCounter/RunCounter.rar"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RunCounter/RunCounter1.0.6.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
