@@ -3,7 +3,7 @@ layout: mod
 
 authors: "PyrexBLJ" # Authors of the mod
 title: Run Counter # Title of the mod
-version: "1.0.6" # Version of the mod
+version: "1.0.7" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Farm and drop tracker" # A short description of the mod itself.
@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RunCounter/RunCounter1.0.6.rar"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RunCounter/RunCounter1.0.7.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 

@@ -6,9 +6,9 @@ title: Bank & Stash Anywhere (BASA) # Title of the mod
 version: "1.0.2" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Use the bank and stash from anywhere with a hotkey" # A short description of the mod itself.
-description: "Use the bank and stash from anywhere with a hotkey" # This is set in order to keep the SEO proper
-longDescription: "Use the bank and stash from anywhere with a hotkey" # Description of what the mod can do
+tagline: "Use the bank and stash from anywhere with a hotkey. Can cause some visual texture issues" # A short description of the mod itself.
+description: "Use the bank and stash from anywhere with a hotkey. Can cause some visual texture issues" # This is set in order to keep the SEO proper
+longDescription: "Use the bank and stash from anywhere with a hotkey. Can cause some visual texture issues" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
