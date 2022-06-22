@@ -1,9 +1,9 @@
 ---
 layout: mod
 
-authors: "ZetaDaemon" # Authors of the mod
+authors: "ZetaDæmon" # Authors of the mod
 title: Farm Counter # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.1" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds a customiseable farm counter to keep track of your runs." # A short description of the mod itself.
@@ -11,8 +11,8 @@ description: "Adds a customiseable farm counter to keep track of your runs." # T
 longDescription: "Adds a customiseable farm counter to keep track of your runs." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: [] # Requirements for the given mod
-requirementTitles: [] # The link-friendly name of the requirements
+requirements: ['UserFeedback >= 1.5'] # Requirements for the given mod
+requirementTitles: ['UserFeedback'] # The link-friendly name of the requirements
 
 issues: ""
 download: "https://github.com/ZetaDaemon/bl-sdk-mods/raw/main/FarmCounter/FarmCounter.zip"
