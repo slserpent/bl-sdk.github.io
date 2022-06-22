@@ -3,19 +3,19 @@ layout: mod
 
 authors: "PyrexBLJ" # Authors of the mod
 title: Run Counter # Title of the mod
-version: "1.0.7" # Version of the mod
+version: "1.0.8" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Farm and drop tracker" # A short description of the mod itself.
 description: "Farm and drop tracker" # This is set in order to keep the SEO proper
-longDescription: "A Mod that tracks save quits and item drops of at least legendary rarity. Chat command control with .rc prefix allows you to create new tracked farms, load previously made farms and control what data is shown where at any given time. ![yt](https://youtu.be/uA7ywuPifFo)" # Description of what the mod can do
+longDescription: "A Mod that tracks save quits and item drops of at least legendary rarity. Chat command control with .rc prefix allows you to create new tracked farms, load previously made farms and control what data is shown where at any given time. If you are looking for something to make obs overlays check out ZetaDæmon's Farm Counter ![yt](https://youtu.be/wKz2ylxg9NQ)" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RunCounter/RunCounter1.0.7.rar"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RunCounter/RunCounter1.0.8.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
