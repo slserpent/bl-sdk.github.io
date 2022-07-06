@@ -3,12 +3,12 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: BL2 Eternal # Title of the mod
-version: "1.1" # Version of the mod
+version: "1.2" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Glory Kills and Dashing in BL2." # A short description of the mod itself.
 description: "Glory Kills and Dashing in BL2." # This is set in order to keep the SEO proper
-longDescription: "Doom Eternal, but it's BL2.\nAdds the dash and glory kill mechanics from Doom Eternal to BL2.\nDash: Press sprint + direction while in air to dash.\nGlory Kill: Meleeing injured enemies causes them to instantly die and drop additional loot and restore your health. Injured enemies are marked by shock + fire particles around their feet.\n" # Description of what the mod can do
+longDescription: "Doom Eternal, but it's BL2.\nAdds the dash and glory kill mechanics from Doom Eternal to BL2.\nDash: Press sprint + direction while in air to dash.\nGlory Kill: Meleeing injured enemies causes them to instantly die and drop additional loot and restore your health. Enemies enter the glory kill state when below 15% health and injured. Enemies will stay only 5 seconds in the Glory Kill state.5 seconds after leaving the Glory Kill state the enemies can enter the state again by getting damaged while under 15% health.Glory killable enemies are marked by shock + fire particles around their feet.\n" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
