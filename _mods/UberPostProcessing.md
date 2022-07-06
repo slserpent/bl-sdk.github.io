@@ -3,7 +3,7 @@ layout: mod
 
 authors: "juso" # Authors of the mod
 title: Uber Post Processing # Title of the mod
-version: "1.1" # Version of the mod
+version: "1.2" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "More Graphical Settings." # A short description of the mod itself.
