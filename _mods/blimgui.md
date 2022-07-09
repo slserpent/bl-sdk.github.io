@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Adds imgui support to PythonSDK Mods." # A short description of the mod itself.
 description: "Adds imgui support to PythonSDK Mods." # This is set in order to keep the SEO proper
-longDescription: "A [PythonSDK](https://github.com/bl-sdk/PythonSDK) library that wraps boilerplate code for [pyimgui](https://github.com/pyimgui/pyimgui).\nThis library allows modders to easily create and interact with a new opengl window with an existing imgui context.\nThis mod is a spiritual successor to my [PyImgui SDK Mod](https://github.com/juso40/bl2sdk_Mods/tree/master/PyImgui)." # Description of what the mod can do
+longDescription: "A [PythonSDK](https://github.com/bl-sdk/PythonSDK) library that wraps boilerplate code for [pyimgui](https://github.com/pyimgui/pyimgui).\nThis library allows modders to easily create and interact with a new opengl window with an existing imgui context." # Description of what the mod can do
 categories: ['Library'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
