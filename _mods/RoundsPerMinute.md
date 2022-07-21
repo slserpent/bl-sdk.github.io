@@ -3,7 +3,7 @@ layout: mod
 
 authors: "apple1417" # Authors of the mod
 title: Rounds Per Minute # Title of the mod
-version: "1.2" # Version of the mod
+version: "1.3" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Makes item cards display rounds per minute rather than per second." # A short description of the mod itself.
