@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "juso" # Authors of the mod
 title: BL2 Eternal # Title of the mod

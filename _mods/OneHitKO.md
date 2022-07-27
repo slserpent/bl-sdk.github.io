@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "apple1417" # Authors of the mod
 title: One-Hit KO # Title of the mod

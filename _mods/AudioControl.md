@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "PyrexBLJ" # Authors of the mod
 title: Audio Control # Title of the mod

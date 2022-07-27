@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "juso" # Authors of the mod
 title: RogueLands # Title of the mod

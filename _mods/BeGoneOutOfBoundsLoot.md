@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "juso" # Authors of the mod
 title: Be Gone Out Of Bounds Loot # Title of the mod

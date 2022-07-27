@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "apple1417" # Authors of the mod
 title: Mario Mode # Title of the mod

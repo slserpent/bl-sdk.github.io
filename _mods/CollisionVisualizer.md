@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "None" # Authors of the mod
 title: Collision Visualizer # Title of the mod

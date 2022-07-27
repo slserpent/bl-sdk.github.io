@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "FromDarkHell" # Authors of the mod
 title: Backpack Manager # Title of the mod

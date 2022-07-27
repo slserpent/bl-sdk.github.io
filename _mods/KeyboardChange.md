@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "Ceiyne" # Authors of the mod
 title: Keyboard Change # Title of the mod

@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "juso" # Authors of the mod
 title: Better Spawns and Better Travel (BSABT) # Title of the mod

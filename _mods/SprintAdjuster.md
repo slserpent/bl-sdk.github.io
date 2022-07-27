@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "plu5" # Authors of the mod
 title: Sprint Adjuster # Title of the mod

@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "FromDarkHell" # Authors of the mod
 title: Skill Saver # Title of the mod

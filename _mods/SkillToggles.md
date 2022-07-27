@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "Relentless, Chronophylos" # Authors of the mod
 title: Skill Toggles # Title of the mod

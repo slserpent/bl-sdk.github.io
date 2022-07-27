@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "apple1417" # Authors of the mod
 title: Python Part Notifier # Title of the mod

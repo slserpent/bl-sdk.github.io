@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "apple1417" # Authors of the mod
 title: Alt Use Vendors # Title of the mod

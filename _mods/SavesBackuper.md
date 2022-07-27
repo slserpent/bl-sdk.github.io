@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "plu5" # Authors of the mod
 title: Saves Backuper # Title of the mod

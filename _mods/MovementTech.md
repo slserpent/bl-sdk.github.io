@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "ZetaDæmon" # Authors of the mod
 title: Movement Tech # Title of the mod

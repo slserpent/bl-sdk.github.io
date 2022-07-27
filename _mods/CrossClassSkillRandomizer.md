@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "Abahbob" # Authors of the mod
 title: Cross Class Skill Randomizer # Title of the mod

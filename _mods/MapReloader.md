@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "FromDarkHell" # Authors of the mod
 title: Map Reloader # Title of the mod

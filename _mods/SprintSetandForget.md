@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "Ceiyne" # Authors of the mod
 title: Sprint Set-and-Forget # Title of the mod

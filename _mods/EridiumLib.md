@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "Chronophylos, Relentless" # Authors of the mod
 title: EridiumLib # Title of the mod

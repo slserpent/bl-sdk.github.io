@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "Chronophylos, Relentless" # Authors of the mod
 title: Mission Selector # Title of the mod

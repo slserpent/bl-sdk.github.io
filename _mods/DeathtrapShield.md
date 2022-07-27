@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "Relentless" # Authors of the mod
 title: Deathtrap Shield # Title of the mod

@@ -1,5 +1,5 @@
 ---
-layout: mod
+layout: main
 
 authors: "GameChanger97" # Authors of the mod
 title: Visual Triggers # Title of the mod
