@@ -3,21 +3,21 @@ layout: main
 
 authors: "Chronophylos, Relentless" # Authors of the mod
 title: EridiumLib # Title of the mod
-version: "0.4.1" # Version of the mod
+version: "0.4.2" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Holds utility functions for some mods." # A short description of the mod itself.
 description: "Holds utility functions for some mods." # This is set in order to keep the SEO proper
-longDescription: "Holds utility functions for some mods.\n\nEverything related to versions and their release notes can be found in the [changelog](https://github.com/RLNT/bl2_eridium/blob/main/CHANGELOG.md).\nIf you found a bug or you have a feature request, please use our issue tracker linked below.\nIn case you need support, please join our [Discord](https://discordapp.com/invite/Q3qxws6)." # Description of what the mod can do
+longDescription: "Holds utility functions for some mods.\n\nEverything related to versions and their release notes can be found in the [changelog](https://github.com/DAmNRelentless/bl2-eridiumlib/blob/main/CHANGELOG.md).\nIf you found a bug or you have a feature request, please use our issue tracker linked below." # Description of what the mod can do
 categories: ['Library'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
-issues: "https://github.com/RLNT/bl2_eridium/issues"
-download: "https://github.com/RLNT/bl2_eridium/releases/tag/v0.4.1"
-source: "https://github.com/RLNT/bl2_eridium" # Link to source code
-license: ['GNU Lesser General Public License v2.1', 'https://github.com/RLNT/bl2_eridium/blob/main/LICENSE'] # License name, link about the license from https://choosealicense.com/
+issues: "https://github.com/DAmNRelentless/bl2-eridiumlib/issues"
+download: "https://github.com/DAmNRelentless/bl2-eridiumlib/releases/tag/v0.4.2"
+source: "https://github.com/DAmNRelentless/bl2-eridiumlib" # Link to source code
+license: ['GNU Lesser General Public License v2.1', 'https://github.com/DAmNRelentless/bl2-eridiumlib/blob/main/LICENSE'] # License name, link about the license from https://choosealicense.com/
 
 ---
 **Contents**
