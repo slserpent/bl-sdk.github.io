@@ -3,20 +3,20 @@ layout: main
 
 authors: "Chronophylos, Relentless" # Authors of the mod
 title: Mission Selector # Title of the mod
-version: "1.3.1" # Version of the mod
+version: "1.3.2" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Lets you switch through missions with configurable hotkeys like in Borderlands 3." # A short description of the mod itself.
 description: "Lets you switch through missions with configurable hotkeys like in Borderlands 3." # This is set in order to keep the SEO proper
-longDescription: "Lets you switch through missions with configurable hotkeys like in Borderlands 3.\n\nFeatures:\n- jump forwards and backwards in the active missions\n- configurable hotkeys\n\nNotes:\n- since this is often not the case with SDK mods: yes, this has multiplayer support if all players have it installed\n\nEverything related to versions and their release notes can be found in the [changelog](https://github.com/RLNT/bl2_missionselector/blob/main/CHANGELOG.md).\nIf you found a bug or you have a feature request, please use our issue tracker linked below.\nIn case you need support, please join our [Discord](https://discordapp.com/invite/Q3qxws6)." # Description of what the mod can do
+longDescription: "Lets you switch through missions with configurable hotkeys like in Borderlands 3.\n\nFeatures:\n- jump forwards and backwards in the active missions\n- configurable hotkeys\n\nNotes:\n- since this is often not the case with SDK mods: yes, this has multiplayer support if all players have it installed\n\nEverything related to versions and their release notes can be found in the [changelog](https://github.com/DAmNRelentless/bl2-missionselector/blob/main/CHANGELOG.md).\nIf you found a bug or you have a feature request, please use our issue tracker linked below." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: ['EridiumLib >= 0.4.1'] # Requirements for the given mod
+requirements: ['EridiumLib >= 0.4.2'] # Requirements for the given mod
 requirementTitles: ['EridiumLib'] # The link-friendly name of the requirements
 
-issues: "https://github.com/RLNT/bl2_missionselector/issues"
-download: "https://github.com/RLNT/bl2_missionselector/releases/tag/v1.3.1"
-source: "https://github.com/RLNT/bl2_missionselector" # Link to source code
+issues: "https://github.com/DAmNRelentless/bl2-missionselector/issues"
+download: "https://github.com/DAmNRelentless/bl2-missionselector/releases/tag/v1.3.2"
+source: "https://github.com/DAmNRelentless/bl2-missionselector" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
 ---
