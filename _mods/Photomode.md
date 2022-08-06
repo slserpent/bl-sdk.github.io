@@ -3,12 +3,12 @@ layout: main
 
 authors: "juso" # Authors of the mod
 title: Photomode # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "A lightweight photomode for BL2/TPS." # A short description of the mod itself.
 description: "A lightweight photomode for BL2/TPS." # This is set in order to keep the SEO proper
-longDescription: "Adds a keybind to toggle ``Photomode``, by default ``P``." # Description of what the mod can do
+longDescription: "Adds a keybind to toggle ``Photomode``, by default ``P``.\n'Mousewheel Up/Down' to change the active modifier.\nHold 'Shift' while scrolling to change the camera movement speed.\nHold 'R' while scrolling to change the camera rotation.\nHold 'F' while scrolling to change the camera FOV." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
