@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: ""
-download: "https://github.com/apple1417/bl-sdk-mods/raw/master/SanitySaver/SanitySaver.zip"
+download: "https://github.com/apple1417/bl-sdk-mods/raw/c631c70226fe05e0209c34cd4f4e489a0c7154ce/SanitySaver/SanitySaver.zip"
 source: "https://github.com/apple1417/bl-sdk-mods/" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
