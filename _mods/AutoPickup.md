@@ -6,9 +6,9 @@ title: AutoPickup # Title of the mod
 version: "1.0.0" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Automaticly pickups consumable items from chests like BL3" # A short description of the mod itself.
-description: "Automaticly pickups consumable items from chests like BL3" # This is set in order to keep the SEO proper
-longDescription: "Automaticly pickups consumable items, such as Ammo, Health, Eridium. It's an attempt to automaticly pickup items from chest after opening, BL3 style. Side effect is that it tries to pickup from the ground also." # Description of what the mod can do
+tagline: "Automatically pickups consumable items from chests like BL3" # A short description of the mod itself.
+description: "Automatically pickups consumable items from chests like BL3" # This is set in order to keep the SEO proper
+longDescription: "Automatically pickups consumable items, such as Ammo, Health, Eridium. It's an attempt to automatically pickup items from chest after opening, BL3 style. Side effect is that it tries to pickup from the ground also." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
