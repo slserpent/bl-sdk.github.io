@@ -12,5 +12,6 @@
   "https://gitlab.com/Ceiyne/borderlands-mods/-/raw/main/modinfo.json",
   "https://raw.githubusercontent.com/PyrexBLJ/blsdk-mods/main/modinfo.json",
   "https://raw.githubusercontent.com/ZetaDaemon/bl-sdk-mods/main/modinfo.json",
-  "https://raw.githubusercontent.com/bl-sdk/former-default-mods/master/modinfo.json"
+  "https://raw.githubusercontent.com/bl-sdk/former-default-mods/master/modinfo.json",
+  "https://raw.githubusercontent.com/tominator1pl/bl-sdk-mods/main/ModInfo.json"
 ]
