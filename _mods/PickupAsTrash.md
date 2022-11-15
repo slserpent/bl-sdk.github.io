@@ -8,7 +8,7 @@ supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "
 
 tagline: "Adds an option to pickup items from the ground as trash" # A short description of the mod itself.
 description: "Adds an option to pickup items from the ground as trash" # This is set in order to keep the SEO proper
-longDescription: "Adds an option to pickup items from the ground as trash \nYou can use yor Secondary Use (default Q) on item on the ground to pick it up. Such items will be automatically marked as trash, so you can sell it at vendor faster.\nThere is a built-in setting to disable the tooltip." # Description of what the mod can do
+longDescription: "Adds an option to pickup items from the ground as trash.\nYou can use your Secondary Use (default Q) on item on the ground to pick it up. Such items will be automatically marked as trash, so you can sell it at a vendor faster.\nThere is a built-in setting to disable the tooltip." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: ['Enums >= 1.0', 'Structs >= 1.0'] # Requirements for the given mod
