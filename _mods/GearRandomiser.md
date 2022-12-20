@@ -8,7 +8,7 @@ supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "
 
 tagline: "Randomises all gear in the game." # A short description of the mod itself.
 description: "Randomises all gear in the game." # This is set in order to keep the SEO proper
-longDescription: "Randomises all gear in the game.Adds options to additionally choose which character class mods will be locked to as well as a chaos mode which removes restrictions for weapons as to which parts spawn where on a gun.Does not change how loot is obtained or enemy drops so it is highly suggested to also use a mod like Cold Dead HandsAlso works with mods that add new gear to the game, you will just need to update parts for the randomiser in the mod enable window after running the other mod." # Description of what the mod can do
+longDescription: "Randomises all gear in the game.\nAdds options to additionally choose which character class mods will be locked to as well as a chaos mode which removes restrictions for weapons as to which parts spawn where on a gun.\nDoes not change how loot is obtained or enemy drops so it is highly suggested to also use a mod like Cold Dead Hands.\nAlso works with mods that add new gear to the game, you will just need to update parts for the randomiser in the mod enable window after running the other mod.\nIf progess is stuck due to weapon randomisation there is a backup button to re-randomise all weapons not belonging to the player." # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: ['Structs >= 1.0', 'Sanity Saver >= 2.2'] # Requirements for the given mod
