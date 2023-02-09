@@ -3,12 +3,12 @@ layout: main
 
 authors: "juso" # Authors of the mod
 title: UEMath Library # Title of the mod
-version: "1.1" # Version of the mod
+version: "1.2" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Math library with wrapper functions for UE Rotator and Vector operations." # A short description of the mod itself.
 description: "Math library with wrapper functions for UE Rotator and Vector operations." # This is set in order to keep the SEO proper
-longDescription: "Math library with wrapper functions for UE Rotator and Vector operations." # Description of what the mod can do
+longDescription: "This library is meant to be used by other mods, it provides no functionality on its own.\nLibrary with focus on UEVector and UERotator operations.\nThis library also contains game loop functions, which can be used to execute code every frame or on given condition.\n" # Description of what the mod can do
 categories: ['Library'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
