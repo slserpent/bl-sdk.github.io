@@ -2,20 +2,20 @@
 layout: main
 
 authors: "juso" # Authors of the mod
-title: UEMath Library # Title of the mod
-version: "1.3" # Version of the mod
+title: Coroutines # Title of the mod
+version: "1.0" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Math library with wrapper functions for UE Rotator and Vector operations." # A short description of the mod itself.
-description: "Math library with wrapper functions for UE Rotator and Vector operations." # This is set in order to keep the SEO proper
-longDescription: "This library is meant to be used by other mods, it provides no functionality on its own.\nLibrary with focus on UEVector and UERotator operations." # Description of what the mod can do
+tagline: "Libray that adds coroutine interface." # A short description of the mod itself.
+description: "Libray that adds coroutine interface." # This is set in order to keep the SEO proper
+longDescription: "A library that adds a simple coroutine interface." # Description of what the mod can do
 categories: ['Library'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://github.com/juso40/bl2sdk_Mods/raw/master/uemath/uemath.zip"
+download: "https://github.com/juso40/bl2sdk_Mods/raw/master/coroutines/coroutines.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
