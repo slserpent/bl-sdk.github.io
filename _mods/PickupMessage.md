@@ -3,7 +3,7 @@ layout: main
 
 authors: "juso" # Authors of the mod
 title: Pickup Message # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Shows a message with the item you just picked up." # A short description of the mod itself.
@@ -11,8 +11,8 @@ description: "Shows a message with the item you just picked up." # This is set i
 longDescription: "Shows a message with the item you just picked up." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: [] # Requirements for the given mod
-requirementTitles: [] # The link-friendly name of the requirements
+requirements: ['Coroutines >= 1.1'] # Requirements for the given mod
+requirementTitles: ['Coroutines'] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
 download: "https://github.com/juso40/bl2sdk_Mods/raw/master/PickupMessages/PickupMessages.zip"
