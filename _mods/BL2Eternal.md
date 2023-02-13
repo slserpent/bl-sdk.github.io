@@ -3,7 +3,7 @@ layout: main
 
 authors: "juso" # Authors of the mod
 title: BL2 Eternal # Title of the mod
-version: "1.5.0" # Version of the mod
+version: "1.5.1" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Glory Kills and Dashing in BL2." # A short description of the mod itself.
