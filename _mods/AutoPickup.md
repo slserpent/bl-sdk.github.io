@@ -3,7 +3,7 @@ layout: main
 
 authors: "Tominator" # Authors of the mod
 title: AutoPickup # Title of the mod
-version: "1.0.0" # Version of the mod
+version: "1.0.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Automatically pickups consumable items from chests like BL3" # A short description of the mod itself.
