@@ -2,20 +2,20 @@
 layout: main
 
 authors: "juso" # Authors of the mod
-title: speedometer # Title of the mod
-version: "1.1" # Version of the mod
+title: CanvasLIB # Title of the mod
+version: "1.0" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "See how fast you go." # A short description of the mod itself.
-description: "See how fast you go." # This is set in order to keep the SEO proper
-longDescription: "Gotta go fast!\nShows your current speed in km/h or mph.\n" # Description of what the mod can do
-categories: ['Utility'] # Category of the type of mod
+tagline: "A library for easy writing to the screen with different fonts and alignments." # A short description of the mod itself.
+description: "A library for easy writing to the screen with different fonts and alignments." # This is set in order to keep the SEO proper
+longDescription: "A library for easy writing to the screen with different fonts and alignments.\n" # Description of what the mod can do
+categories: ['Library'] # Category of the type of mod
 
-requirements: ['Coroutines >= 1.1', 'UEMath Library >= 1.3', 'canvaslib >= 1.0'] # Requirements for the given mod
-requirementTitles: ['Coroutines', 'UEMathLibrary', 'canvaslib'] # The link-friendly name of the requirements
+requirements: ['Coroutines >= 1.1'] # Requirements for the given mod
+requirementTitles: ['Coroutines'] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://github.com/juso40/bl2sdk_Mods/raw/master/speedometer/speedometer.zip"
+download: "https://github.com/juso40/bl2sdk_Mods/raw/master/canvaslib/canvaslib.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
