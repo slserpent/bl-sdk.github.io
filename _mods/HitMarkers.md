@@ -2,20 +2,20 @@
 layout: main
 
 authors: "juso" # Authors of the mod
-title: CanvasLIB # Title of the mod
-version: "1.1" # Version of the mod
-supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+title: Hit Markers # Title of the mod
+version: "1.0" # Version of the mod
+supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "A library for easy writing to the screen with different fonts and alignments." # A short description of the mod itself.
-description: "A library for easy writing to the screen with different fonts and alignments." # This is set in order to keep the SEO proper
-longDescription: "A library for easy writing to the screen with different fonts and alignments.\n" # Description of what the mod can do
-categories: ['Library'] # Category of the type of mod
+tagline: "Adds customizable hitmarkers to the game." # A short description of the mod itself.
+description: "Adds customizable hitmarkers to the game." # This is set in order to keep the SEO proper
+longDescription: "Adds customizable hitmarkers to the game.\nThere are custom markers for critical hits, normal hits and kills.\nThe markers can be either dynamic (fade out alpha and or grow over time) or be static." # Description of what the mod can do
+categories: ['Utility'] # Category of the type of mod
 
-requirements: ['Coroutines >= 1.1'] # Requirements for the given mod
-requirementTitles: ['Coroutines'] # The link-friendly name of the requirements
+requirements: ['Coroutines >= 1.1', 'CanvasLIB >= 1.1'] # Requirements for the given mod
+requirementTitles: ['Coroutines', 'CanvasLIB'] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://github.com/juso40/bl2sdk_Mods/raw/master/canvaslib/canvaslib.zip"
+download: "https://github.com/juso40/bl2sdk_Mods/raw/master/hitmarkers/hitmarkers.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
