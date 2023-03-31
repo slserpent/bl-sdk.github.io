@@ -2,20 +2,20 @@
 layout: main
 
 authors: "juso" # Authors of the mod
-title: Sliding # Title of the mod
-version: "2.2" # Version of the mod
+title: tweens # Title of the mod
+version: "1.0" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Adds Sliding to BL2." # A short description of the mod itself.
-description: "Adds Sliding to BL2." # This is set in order to keep the SEO proper
-longDescription: "Slide!\nSliding speed gets calculated from slope and slide duration. You slide faster and longer if you slide downhill.\n![yt](https://www.youtube.com/watch?v=u0Ao8SGIbVU&amp;t)" # Description of what the mod can do
-categories: ['Gameplay'] # Category of the type of mod
+tagline: "A library for tweening values." # A short description of the mod itself.
+description: "A library for tweening values." # This is set in order to keep the SEO proper
+longDescription: "A library for tweening values.\nThis library allows you to tween values over time with various easing functions.\n" # Description of what the mod can do
+categories: ['Library'] # Category of the type of mod
 
-requirements: ['Coroutines >= 1.1', 'UEMath Library >= 1.3', 'tweens >= 1.0'] # Requirements for the given mod
-requirementTitles: ['Coroutines', 'UEMathLibrary', 'tweens'] # The link-friendly name of the requirements
+requirements: ['Coroutines >= 1.1'] # Requirements for the given mod
+requirementTitles: ['Coroutines'] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://github.com/juso40/bl2sdk_Mods/raw/master/Sliding/Sliding.zip"
+download: "https://github.com/juso40/bl2sdk_Mods/raw/master/tweens/tweens.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
