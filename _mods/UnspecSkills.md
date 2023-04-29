@@ -3,7 +3,7 @@ layout: main
 
 authors: "ZetaDæmon" # Authors of the mod
 title: Unspec Skills # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.1" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Allows Unspeccing skills by right clicking on them" # A short description of the mod itself.
