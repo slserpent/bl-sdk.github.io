@@ -11,8 +11,8 @@ description: "See how fast you go." # This is set in order to keep the SEO prope
 longDescription: "Gotta go fast!\nShows your current speed in km/h or mph.\n" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: ['Coroutines >= 1.1', 'UEMath Library >= 1.3', 'canvaslib >= 1.0'] # Requirements for the given mod
-requirementTitles: ['Coroutines', 'UEMathLibrary', 'canvaslib'] # The link-friendly name of the requirements
+requirements: ['Coroutines >= 1.1', 'UEMath Library >= 1.3', 'CanvasLIB >= 1.0'] # Requirements for the given mod
+requirementTitles: ['Coroutines', 'UEMathLibrary', 'CanvasLIB'] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
 download: "https://github.com/juso40/bl2sdk_Mods/raw/master/speedometer/speedometer.zip"
