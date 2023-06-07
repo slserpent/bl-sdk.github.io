@@ -3,19 +3,19 @@ layout: main
 
 authors: "juso" # Authors of the mod
 title: NoCrosshair # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.1" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Disables your Crosshair." # A short description of the mod itself.
 description: "Disables your Crosshair." # This is set in order to keep the SEO proper
-longDescription: "Disables your Crosshair." # Description of what the mod can do
+longDescription: "Disables your Crosshair.\nIf you have the ``coroutines`` and ``canvaslib`` libraries installed, you may enable a static square crosshair in the center of the screen.\nThis static square can further be customized in the mods settings menu." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
-download: "https://raw.githubusercontent.com/juso40/bl2sdk_Mods/master/NoCrosshair/__init__.py"
+download: "https://raw.githubusercontent.com/juso40/bl2sdk_Mods/master/NoCrosshair/NoCrosshair.zip"
 source: "https://github.com/juso40/bl2sdk_Mods/" # Link to source code
 license: ['MIT', 'https://choosealicense.com/licenses/mit'] # License name, link about the license from https://choosealicense.com/
 
