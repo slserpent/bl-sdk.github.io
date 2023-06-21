@@ -4,7 +4,7 @@ layout: main
 authors: "juso" # Authors of the mod
 title: FirstPersonDriver # Title of the mod
 version: "2.0" # Version of the mod
-supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Switch between 1st/3rd person while driving." # A short description of the mod itself.
 description: "Switch between 1st/3rd person while driving." # This is set in order to keep the SEO proper
