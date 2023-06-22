@@ -3,7 +3,7 @@ layout: main
 
 authors: "juso" # Authors of the mod
 title: mateditor # Title of the mod
-version: "1.1" # Version of the mod
+version: "1.2" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Edit Materials in realtime." # A short description of the mod itself.
@@ -11,7 +11,7 @@ description: "Edit Materials in realtime." # This is set in order to keep the SE
 longDescription: "This SDK mod is a Tool for modders. It allows the user to easily change any `MaterialInstanceConstant` in realtime.\nYou can filter all Materials and Textures using a search field.\nTo change the colors you have the choice between using a slider, inputting your own values (by CNRTL+Leftclick) or using a color wheel.All changes can easily be exported to a `.blcm` file to use as a standalone mod or for a modpack." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
-requirements: ['blimgui >= 0.1.0'] # Requirements for the given mod
+requirements: ['blimgui >= 2.0'] # Requirements for the given mod
 requirementTitles: ['blimgui'] # The link-friendly name of the requirements
 
 issues: "https://github.com/juso40/bl2sdk_Mods/issues"
