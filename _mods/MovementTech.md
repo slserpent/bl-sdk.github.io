@@ -3,16 +3,16 @@ layout: main
 
 authors: "ZetaDæmon" # Authors of the mod
 title: Movement Tech # Title of the mod
-version: "1.1" # Version of the mod
-supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+version: "1.2" # Version of the mod
+supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Allows for double jumps and slamming in BL2." # A short description of the mod itself.
 description: "Allows for double jumps and slamming in BL2." # This is set in order to keep the SEO proper
-longDescription: "Allows for double jumps and slamming in BL2." # Description of what the mod can do
+longDescription: "Allows for double jumps and slamming in BL2.\nNow with multiplayer support!" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
-requirements: [] # Requirements for the given mod
-requirementTitles: [] # The link-friendly name of the requirements
+requirements: ['Enums >= 1.0'] # Requirements for the given mod
+requirementTitles: ['Enums'] # The link-friendly name of the requirements
 
 issues: ""
 download: "https://github.com/ZetaDaemon/bl-sdk-mods/raw/main/MovementTech/MovementTech.zip"

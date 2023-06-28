@@ -4,7 +4,7 @@ layout: main
 authors: "ZetaDæmon" # Authors of the mod
 title: Difficulty Modes # Title of the mod
 version: "1.0" # Version of the mod
-supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Replaces BAR with a difficulty mode that can be changed in the options." # A short description of the mod itself.
 description: "Replaces BAR with a difficulty mode that can be changed in the options." # This is set in order to keep the SEO proper
