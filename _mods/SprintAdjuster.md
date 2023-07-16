@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/plu5/p-borderlands/issues"
-download: "https://github.com/plu5/p-borderlands/releases/tag/v1.1.1"
+download: "https://github.com/plu5/p-borderlands/releases/latest"
 source: "https://github.com/plu5/p-borderlands/blob/main/SprintAdjuster" # Link to source code
 license: [] # License name, link about the license from https://choosealicense.com/
 
