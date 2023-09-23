@@ -2,20 +2,20 @@
 layout: main
 
 authors: "PyrexBLJ" # Authors of the mod
-title: All Or Nothing Companion # Title of the mod
-version: "1.0.3" # Version of the mod
-supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+title: Super Screenshots # Title of the mod
+version: "1.0.0" # Version of the mod
+supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "All Or Nothing Companion" # A short description of the mod itself.
-description: "All Or Nothing Companion" # This is set in order to keep the SEO proper
-longDescription: "Joltz idea for a deception modifier in his AON run" # Description of what the mod can do
+tagline: "High res screenshots" # A short description of the mod itself.
+description: "High res screenshots" # This is set in order to keep the SEO proper
+longDescription: "High resolution screenshots independent of game resolution, 1440p - 16k" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/AllOrNothingCompanion/AllOrNothingCompanion.rar"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/SuperScreenshots/SuperScreenshots.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
