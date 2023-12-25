@@ -1,7 +1,7 @@
 ---
 layout: main
 
-authors: "PyrexBLJ" # Authors of the mod
+authors: "Pyrex" # Authors of the mod
 title: Run Counter # Title of the mod
 version: "1.0.8" # Version of the mod
 supported: "BL2 + TPS" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
