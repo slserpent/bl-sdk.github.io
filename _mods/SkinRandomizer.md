@@ -8,7 +8,7 @@ supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + 
 
 tagline: "Press a button to randomly select a customization." # A short description of the mod itself.
 description: "Press a button to randomly select a customization." # This is set in order to keep the SEO proper
-longDescription: "Features: \n-Press a button to select a random customization combination \n---This selects a random head/skin for characters and random skin for both vehicles\n-Adds an option to unlock customization eligibility\n---This allows maya heads to be used on zer0, vehicle skins can be character skins, etc.ver 1.1: added in the function to allow the ranomize key to be reboundver 1.2: renamed hooked function for compatibility" # Description of what the mod can do
+longDescription: "Features: \n-Press a button to select a random customization combination \n---This selects a random head/skin for characters and random skin for both vehicles\n-Adds an option to unlock customization eligibility\n---This allows maya heads to be used on zer0, vehicle skins can be character skins, etc.\nver 1.1: added in the function to allow the ranomize key to be rebound\nver 1.2: renamed hooked function for compatibility" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
