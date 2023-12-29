@@ -3,19 +3,19 @@ layout: main
 
 authors: "Pyrex" # Authors of the mod
 title: Audio Control # Title of the mod
-version: "1.0.0" # Version of the mod
+version: "1.0.1" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Stop the bee shield sound" # A short description of the mod itself.
-description: "Stop the bee shield sound" # This is set in order to keep the SEO proper
-longDescription: "Stop certain sounds from playing, more sounds will be added in the future ![yt](https://youtu.be/qcjTTJC3OeU)" # Description of what the mod can do
+tagline: "Stop the bee shield &amp; bore sounds" # A short description of the mod itself.
+description: "Stop the bee shield &amp; bore sounds" # This is set in order to keep the SEO proper
+longDescription: "Stop certain sounds from playing, more sounds can be added in the future ![yt](https://youtu.be/qcjTTJC3OeU)" # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/AudioControl/AudioControl1_0_0.rar"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/AudioControl/AudioControl1_0_1.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
