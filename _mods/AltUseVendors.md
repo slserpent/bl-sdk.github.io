@@ -3,7 +3,7 @@ layout: main
 
 authors: "apple1417" # Authors of the mod
 title: Alt Use Vendors # Title of the mod
-version: "2.1" # Version of the mod
+version: "2.2" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds alt use binds to vendors, like in BL3/Wonderlands." # A short description of the mod itself.
