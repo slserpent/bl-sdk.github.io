@@ -3,7 +3,7 @@ layout: main
 
 authors: "Pyrex" # Authors of the mod
 title: Roguelands Gamemode # Title of the mod
-version: "1.0.0" # Version of the mod
+version: "1.0.1" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Roguelike gamemode for Borderlands 2 full of custom content." # A short description of the mod itself.
@@ -15,7 +15,7 @@ requirements: ['MapLoader >= 1.4.3', 'UserFeedback >= 1.6'] # Requirements for t
 requirementTitles: ['MapLoader', 'UserFeedback'] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/Roguelands/Roguelands.rar"
+download: "http://github.com/PyrexBLJ/blsdk-mods/raw/main/RoguelandsGamemode/RoguelandsGamemode.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
