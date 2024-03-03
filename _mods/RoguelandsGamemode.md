@@ -15,7 +15,7 @@ requirements: ['MapLoader >= 1.4.3', 'UserFeedback >= 1.6'] # Requirements for t
 requirementTitles: ['MapLoader', 'UserFeedback'] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "http://github.com/PyrexBLJ/blsdk-mods/raw/main/RoguelandsGamemode/RoguelandsGamemode.rar"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RoguelandsGamemode/RoguelandsGamemode.rar"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
