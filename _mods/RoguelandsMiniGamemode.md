@@ -2,20 +2,20 @@
 layout: main
 
 authors: "Pyrex" # Authors of the mod
-title: Roguelands Gamemode # Title of the mod
-version: "1.0.3" # Version of the mod
+title: Roguelands Mini Gamemode # Title of the mod
+version: "1.0.0" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Roguelike gamemode for Borderlands 2 full of custom content." # A short description of the mod itself.
-description: "Roguelike gamemode for Borderlands 2 full of custom content." # This is set in order to keep the SEO proper
-longDescription: "Roguelike gamemode for Borderlands 2 full of custom content. Installation: ![yt](https://youtu.be/mOd01whwkiY) \nDISABLE DXVK WHILE USING THIS MOD IF YOU HAVE IT, it will cause a memory leak.\nWould also recommend disabling other mods while running this. They have not been tested and may cause problems.\nThese DLCS are required for the mod to function properly: (basically all story, headhunter and level increase dlcs)\n\nCaptain Scarlett and Her Pirate's Booty\nMr. Torgue's Campaign of Carnage\nSir Hammerlock's Big Game Hunt\nTiny Tina's Assault on Dragon Keep\nUltimate Vault Hunter Upgrade Pack\nUltimate Vault Hunter Upgrade Pack Two: Digistruct Peak Challenge\nT.K. Baha's Bloody Harvest\nThe Horrible Hunger of the Ravenous Wattle Gobbler\nHow Marcus Saved Mercenary Day\nMad Moxxi and the Wedding Day Massacre\nSir Hammerlock vs. the Son of Crawmerax\nCommander Lilith &amp; the Fight for Sanctuary" # Description of what the mod can do
+tagline: "Short roguelike gamemode for Borderlands 2 full of custom content." # A short description of the mod itself.
+description: "Short roguelike gamemode for Borderlands 2 full of custom content." # This is set in order to keep the SEO proper
+longDescription: "Its Roguelands, but shorter.\nRoguelike gamemode for Borderlands 2 full of custom content. Installation: ![yt](https://youtu.be/mOd01whwkiY) \nDISABLE DXVK WHILE USING THIS MOD IF YOU HAVE IT, it will cause a memory leak.\nWould also recommend disabling other mods while running this. They have not been tested and may cause problems.\nThese DLCS are required for the mod to function properly: (basically all story, headhunter and level increase dlcs)\n\nCaptain Scarlett and Her Pirate's Booty\nMr. Torgue's Campaign of Carnage\nSir Hammerlock's Big Game Hunt\nTiny Tina's Assault on Dragon Keep\nUltimate Vault Hunter Upgrade Pack\nUltimate Vault Hunter Upgrade Pack Two: Digistruct Peak Challenge\nT.K. Baha's Bloody Harvest\nThe Horrible Hunger of the Ravenous Wattle Gobbler\nHow Marcus Saved Mercenary Day\nMad Moxxi and the Wedding Day Massacre\nSir Hammerlock vs. the Son of Crawmerax\nCommander Lilith &amp; the Fight for Sanctuary" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: ['MapLoader >= 1.4.3', 'UserFeedback >= 1.6'] # Requirements for the given mod
 requirementTitles: ['MapLoader', 'UserFeedback'] # The link-friendly name of the requirements
 
 issues: "https://github.com/PyrexBLJ/blsdk-mods/issues"
-download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RoguelandsGamemode/RoguelandsGamemode.zip"
+download: "https://github.com/PyrexBLJ/blsdk-mods/blob/main/RoguelandsMiniGamemode/RoguelandsMiniGamemode.zip"
 source: "https://github.com/PyrexBLJ/blsdk-mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
