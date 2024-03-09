@@ -2,20 +2,20 @@
 layout: main
 
 authors: "Rossay" # Authors of the mod
-title: Normal Mode Scaler # Title of the mod
-version: "1.0" # Version of the mod
-supported: "AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+title: Game Scaler # Title of the mod
+version: "2.0" # Version of the mod
+supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Adds player scaling to Normal Mode." # A short description of the mod itself.
-description: "Adds player scaling to Normal Mode." # This is set in order to keep the SEO proper
-longDescription: "Scales all zones in Normal Mode to your level, with a level cap of 17." # Description of what the mod can do
+tagline: "Adds player scaling to Normal Mode and TVHM." # A short description of the mod itself.
+description: "Adds player scaling to Normal Mode and TVHM." # This is set in order to keep the SEO proper
+longDescription: "Scales all zones in Normal Mode and True Vault Hunter Mode to your level, and removes the level cap for TVHM scaling in BL2 and TPS.\nIn BL2 and TPS, Normal Mode level cap is 35, TVHM minimum level is 30.\nIn AoDK, Normal Mode level cap and TVHM minimum level are both 17." # Description of what the mod can do
 categories: ['Utility', 'Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/Rossays/BL-SDK-Mods/issues"
-download: "https://github.com/Rossays/BL-SDK-Mods/blob/main/Normal%20Mode%20Scaler/Normal%20Mode%20Scaler.zip"
+download: "https://github.com/Rossays/BL-SDK-Mods/raw/main/Game%20Scaler/GameScaler.zip"
 source: "https://github.com/Rossays/BL-SDK-Mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
