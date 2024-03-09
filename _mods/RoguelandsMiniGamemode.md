@@ -3,7 +3,7 @@ layout: main
 
 authors: "Pyrex" # Authors of the mod
 title: Roguelands Mini Gamemode # Title of the mod
-version: "1.0.1" # Version of the mod
+version: "1.0.5" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Short roguelike gamemode for Borderlands 2 full of custom content." # A short description of the mod itself.
