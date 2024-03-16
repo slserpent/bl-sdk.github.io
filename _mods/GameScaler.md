@@ -3,12 +3,12 @@ layout: main
 
 authors: "Rossay" # Authors of the mod
 title: Game Scaler # Title of the mod
-version: "2.0" # Version of the mod
+version: "2.1" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Adds player scaling to Normal Mode and TVHM." # A short description of the mod itself.
 description: "Adds player scaling to Normal Mode and TVHM." # This is set in order to keep the SEO proper
-longDescription: "Scales all zones in Normal Mode and True Vault Hunter Mode to your level, and removes the level cap for TVHM scaling in BL2 and TPS.\nIn BL2 and TPS, Normal Mode level cap is 35, TVHM minimum level is 30.\nIn AoDK, Normal Mode level cap and TVHM minimum level are both 17." # Description of what the mod can do
+longDescription: "Scales all zones in Normal Mode and True Vault Hunter Mode to your level, and removes the level cap for TVHM scaling in BL2 and TPS.\nIn BL2 and TPS, Normal Mode level cap is 35, TVHM minimum level is 30.\nIn AoDK, Normal Mode level cap is 18 and TVHM minimum level is 17." # Description of what the mod can do
 categories: ['Utility', 'Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
