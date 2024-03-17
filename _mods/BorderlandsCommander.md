@@ -3,7 +3,7 @@ layout: main
 
 authors: "mopioid" # Authors of the mod
 title: Borderlands Commander # Title of the mod
-version: "2.1" # Version of the mod
+version: "2.5" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Provides hotkeys for number of useful functions in-game." # A short description of the mod itself.
@@ -15,9 +15,9 @@ requirements: ['UserFeedback >= 1.5'] # Requirements for the given mod
 requirementTitles: ['UserFeedback'] # The link-friendly name of the requirements
 
 issues: "https://github.com/mopioid/Borderlands-Commander/issues"
-download: "https://github.com/mopioid/Borderlands-Commander/releases/tag/2.1"
+download: "https://github.com/mopioid/Borderlands-Commander/releases/tag/2.5"
 source: "https://github.com/mopioid/Borderlands-Commander/tree/master" # Link to source code
-license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
+license: [] # License name, link about the license from https://choosealicense.com/
 
 ---
 **Contents**

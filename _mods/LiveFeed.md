@@ -1,22 +1,22 @@
 ---
 layout: main
 
-authors: "apple1417, mopioid" # Authors of the mod
-title: Twitch Login # Title of the mod
-version: "1.0" # Version of the mod
-supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+authors: "mopioid" # Authors of the mod
+title: Live Feed # Title of the mod
+version: "1.2" # Version of the mod
+supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Allows users to login to BL2 and TPS with their (or their bot's) Twitch account, and allows mod developers to make mods with Twitch features using their login." # A short description of the mod itself.
-description: "Allows users to login to BL2 and TPS with their (or their bot's) Twitch account, and allows mod developers to make mods with Twitch features using their login." # This is set in order to keep the SEO proper
-longDescription: "Allows users to login to BL2 and TPS with their (or their bot's) Twitch account, and allows mod developers to make mods with Twitch features using their login." # Description of what the mod can do
+tagline: "Provides access to continuously up-to-date information about the current game, for chatbots and other applications." # A short description of the mod itself.
+description: "Provides access to continuously up-to-date information about the current game, for chatbots and other applications." # This is set in order to keep the SEO proper
+longDescription: "Provides access to continuously up-to-date information about the current game, for chatbots and other applications." # Description of what the mod can do
 categories: ['Library'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
-issues: "https://github.com/mopioid/Borderlands-Twitch-Login/issues"
-download: "https://github.com/mopioid/Borderlands-Twitch-Login/releases/tag/1.0"
-source: "https://github.com/mopioid/Borderlands-Twitch-Login/tree/main" # Link to source code
+issues: "https://github.com/mopioid/Borderlands-Live-Feed/issues"
+download: "https://github.com/mopioid/Borderlands-Live-Feed/releases/tag/1.2"
+source: "https://github.com/mopioid/Borderlands-Live-Feed/tree/main" # Link to source code
 license: [] # License name, link about the license from https://choosealicense.com/
 
 ---

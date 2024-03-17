@@ -4,7 +4,7 @@ layout: main
 authors: "mopioid" # Authors of the mod
 title: Reign Of Giants # Title of the mod
 version: "1.2" # Version of the mod
-supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
+supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Encounter rare, gigantic variants of enemies throughout the Borderlands." # A short description of the mod itself.
 description: "Encounter rare, gigantic variants of enemies throughout the Borderlands." # This is set in order to keep the SEO proper
@@ -17,7 +17,7 @@ requirementTitles: [] # The link-friendly name of the requirements
 issues: "https://github.com/mopioid/Borderlands-Reign-Of-Giants/issues"
 download: "https://github.com/mopioid/Borderlands-Reign-Of-Giants/releases/tag/1.2"
 source: "https://github.com/mopioid/Borderlands-Reign-Of-Giants/tree/main" # Link to source code
-license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
+license: [] # License name, link about the license from https://choosealicense.com/
 
 ---
 **Contents**
