@@ -3,12 +3,12 @@ layout: main
 
 authors: "stelmo" # Authors of the mod
 title: NoCap # Title of the mod
-version: "0.1.1" # Version of the mod
+version: "0.1.2" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Adjust team and player limits" # A short description of the mod itself.
-description: "Adjust team and player limits" # This is set in order to keep the SEO proper
-longDescription: "Extends team limits and functionality.\nAllows up to 8 teams (32 players) by default." # Description of what the mod can do
+tagline: "Increase lobby size for 5+ players" # A short description of the mod itself.
+description: "Increase lobby size for 5+ players" # This is set in order to keep the SEO proper
+longDescription: "Extends team limits and functionality for 5+ player lobbies.\nAllows up to 8 teams (32 players) by default." # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: ['UserFeedback >= 1.5'] # Requirements for the given mod
