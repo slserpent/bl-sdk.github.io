@@ -2,21 +2,21 @@
 layout: main
 
 authors: "Siggles" # Authors of the mod
-title: Less DOT Screams # Title of the mod
+title: Grenade Mod Quick Switcher # Title of the mod
 version: "1.0.0" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Player DOT (status effect) screams don't play unless shield is broken." # A short description of the mod itself.
-description: "Player DOT (status effect) screams don't play unless shield is broken." # This is set in order to keep the SEO proper
-longDescription: "Player DOT (status effect) screams don't play unless shield is broken.\nTo fully disable for certain characters, use 'Customizable Player Audio Muter' BLCMM text mod instead." # Description of what the mod can do
-categories: ['Gameplay'] # Category of the type of mod
+tagline: "Adds a keybind that cycles through grenade mods marked as favourite." # A short description of the mod itself.
+description: "Adds a keybind that cycles through grenade mods marked as favourite." # This is set in order to keep the SEO proper
+longDescription: "Adds a keybind that cycles through grenade mods marked as favourite.\nCycles in the order that items were added to the backpack, or unequipped." # Description of what the mod can do
+categories: ['Utility'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/Siggless/bl-sdk-mods/issues"
-download: "https://github.com/Siggless/bl-sdk-mods/raw/main/LessDOTScreams/LessDOTScreams.zip"
-source: "https://github.com/Siggless/bl-sdk-mods/tree/main/LessDOTScreams" # Link to source code
+download: "https://github.com/Siggless/bl-sdk-mods/raw/main/GrenadeModQuickSwitcher/GrenadeModQuickSwitcher.zip"
+source: "https://github.com/Siggless/bl-sdk-mods/tree/main/GrenadeModQuickSwitcher" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
 ---
