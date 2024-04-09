@@ -8,7 +8,7 @@ supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + 
 
 tagline: "Salvage parts from items and attach them to other items." # A short description of the mod itself.
 description: "Salvage parts from items and attach them to other items." # This is set in order to keep the SEO proper
-longDescription: "Allows you to salvage parts from items and attach them to other items.Just select an item from your backpack, hover over another itemand press the 'salvage' hotkey. Default is [C]Note: the item you salvage parts from will be destroyed in the process." # Description of what the mod can do
+longDescription: "Allows you to salvage parts from items and attach them to other items.\nJust select an item from your backpack, hover over another item and press the 'salvage' hotkey. Default is [C]\nNote: the item you salvage parts from will be destroyed in the process." # Description of what the mod can do
 categories: ['Utility'] # Category of the type of mod
 
 requirements: ['UserFeedback >= 1.5', 'Python Part Notifier >= 1.9'] # Requirements for the given mod
