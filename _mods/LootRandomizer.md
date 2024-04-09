@@ -3,7 +3,7 @@ layout: main
 
 authors: "mopioid" # Authors of the mod
 title: Loot Randomizer # Title of the mod
-version: "1.1.1" # Version of the mod
+version: "1.1.5" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Create seeds to shuffle every item into new farm locations." # A short description of the mod itself.
@@ -15,7 +15,7 @@ requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: "https://github.com/mopioid/Borderlands-Loot-Randomizer/issues"
-download: "https://github.com/mopioid/Borderlands-Loot-Randomizer/releases/tag/1.1.1"
+download: "https://github.com/mopioid/Borderlands-Loot-Randomizer/releases/tag/1.1.5"
 source: "https://github.com/mopioid/Borderlands-Loot-Randomizer/tree/main" # Link to source code
 license: [] # License name, link about the license from https://choosealicense.com/
 
