@@ -3,7 +3,7 @@ layout: main
 
 authors: "LaryIsland" # Authors of the mod
 title: Spare Parts # Title of the mod
-version: "1.2" # Version of the mod
+version: "1.3" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Salvage parts from items and attach them to other items." # A short description of the mod itself.
