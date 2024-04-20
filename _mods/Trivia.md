@@ -3,7 +3,7 @@ layout: main
 
 authors: "Pyrex" # Authors of the mod
 title: Trivia # Title of the mod
-version: "1.0.0" # Version of the mod
+version: "1.0.1" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Trivia Minigame for BL2" # A short description of the mod itself.
