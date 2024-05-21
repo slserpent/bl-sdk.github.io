@@ -6,8 +6,8 @@ title: BankManager # Title of the mod
 version: "1.0" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Adds player scaling to Normal Mode and TVHM." # A short description of the mod itself.
-description: "Adds player scaling to Normal Mode and TVHM." # This is set in order to keep the SEO proper
+tagline: "Customize the size of your character’s backpack on the fly" # A short description of the mod itself.
+description: "Customize the size of your character’s backpack on the fly" # This is set in order to keep the SEO proper
 longDescription: "Customize the size of your character’s backpack on the fly" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
