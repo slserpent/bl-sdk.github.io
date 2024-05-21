@@ -1,14 +1,14 @@
 ---
 layout: main
 
-authors: "PureEvil139/FromDarHell" # Authors of the mod
+authors: "PureEvil139/FromDarkHell" # Authors of the mod
 title: BankManager # Title of the mod
 version: "1.0" # Version of the mod
 supported: "BL2 + TPS + AoDK" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Customize the size of your character’s backpack on the fly" # A short description of the mod itself.
-description: "Customize the size of your character’s backpack on the fly" # This is set in order to keep the SEO proper
-longDescription: "Customize the size of your character’s backpack on the fly" # Description of what the mod can do
+tagline: "Customize the size of your character’s backpack on the fly!" # A short description of the mod itself.
+description: "Customize the size of your character’s backpack on the fly!" # This is set in order to keep the SEO proper
+longDescription: "Customize the size of your character’s backpack on the fly!" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
