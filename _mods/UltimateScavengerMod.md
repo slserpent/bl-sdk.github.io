@@ -2,20 +2,20 @@
 layout: main
 
 authors: "RedxYeti" # Authors of the mod
-title: Revive Time Modifier # Title of the mod
+title: Ultimate Scavenger Mod # Title of the mod
 version: "1.0" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
-tagline: "Choose how long it takes to revive teammates." # A short description of the mod itself.
-description: "Choose how long it takes to revive teammates." # This is set in order to keep the SEO proper
-longDescription: "Using the scroller in the options, choose your time in seconds for how long it takes to revive teammates.\nThe options range from 0 to 10 seconds in 0.5 second increments." # Description of what the mod can do
-categories: ['Utility', 'Gameplay'] # Category of the type of mod
+tagline: "Automatically equips items when they spawn." # A short description of the mod itself.
+description: "Automatically equips items when they spawn." # This is set in order to keep the SEO proper
+longDescription: "This mod automaically equips items when they spawn as long as your character can equip them, showing a message when it's equipped. \nExcluded examples are items higher level than your character or classmods not for your character. \nOptions include: Font Size sliders for the messages, more infomative messages and a few gunzerker options. \nIf you plan on playing gunzerker, make sure to check the known issues on github. \nSingle player only." # Description of what the mod can do
+categories: ['Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
 requirementTitles: [] # The link-friendly name of the requirements
 
 issues: ""
-download: "https://github.com/RedxYeti/Yeti-BL2-SDK-Mods/tree/main/ReviveTimeModifier"
+download: "https://github.com/RedxYeti/Yeti-BL2-SDK-Mods/blob/main/UltimateScavengerMod/UltimateScavengerMod.zip"
 source: "https://github.com/RedxYeti/Yeti-BL2-SDK-Mods" # Link to source code
 license: ['GNU GPLv3', 'https://choosealicense.com/licenses/gpl-3.0'] # License name, link about the license from https://choosealicense.com/
 
