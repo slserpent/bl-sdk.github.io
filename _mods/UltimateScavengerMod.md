@@ -8,7 +8,7 @@ supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + 
 
 tagline: "Automatically equips items when they spawn." # A short description of the mod itself.
 description: "Automatically equips items when they spawn." # This is set in order to keep the SEO proper
-longDescription: "This mod automaically equips items when they spawn as long as your character can equip them, showing a message when it's equipped. \nExcluded examples are items higher level than your character or classmods not for your character. \nOptions include: Font Size sliders for the messages, more informative messages and a few gunzerker options. \nIf you plan on playing gunzerker, make sure to check the known issues on github. \nSingle player only." # Description of what the mod can do
+longDescription: "This mod automaically equips items when they spawn as long as your character can equip them, showing a message when it's equipped. \nExcluded examples are items higher level than your character or classmods not for your character. \nOptions include: Font Size sliders for the messages, more informative messages and a few gunzerker options. \nIf you plan on playing gunzerker, make sure to check the known issues on github. \nSingle player only. \nNexus Mods: https://www.nexusmods.com/borderlands2/mods/412" # Description of what the mod can do
 categories: ['Gameplay'] # Category of the type of mod
 
 requirements: [] # Requirements for the given mod
