@@ -3,7 +3,7 @@ layout: main
 
 authors: "RedxYeti" # Authors of the mod
 title: Ultimate Scavenger Mod # Title of the mod
-version: "1.0" # Version of the mod
+version: "1.31" # Version of the mod
 supported: "BL2" # Supported games; currently can only display as "BL2", "BL2 + TPS", or "TPS"
 
 tagline: "Automatically equips items when they spawn." # A short description of the mod itself.
